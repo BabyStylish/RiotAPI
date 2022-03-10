@@ -104,9 +104,30 @@ namespace RiotAPI
                 var championPlayed = participant.ChampionName;
                 lblchampName.Text = championPlayed.ToString();
 
+
+                //Repository Exception - Not updated (Doesn't have all champion icons)
+                //Ignoring names that don't follow the pattern
+                //DB to be implemented
                 var championImagePath = "https://raw.communitydragon.org/12.4/game/assets/characters/" + Lowercase(championPlayed.ToString()) + "/hud/" + Lowercase(championPlayed.ToString()) + "_square.png";
-                champImage.Load(championImagePath);
-                champImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                try
+                {
+                    champImage.Load(championImagePath);
+                    champImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+                catch (Exception ex)
+                {
+                    try
+                    {
+                        var championImagePath0 = "https://raw.communitydragon.org/12.4/game/assets/characters/" + Lowercase(championPlayed.ToString()) + "/hud/" + Lowercase(championPlayed.ToString()) + "_square_0.png";
+                        champImage.Load(championImagePath0);
+                        champImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                    }
+                    catch (Exception exc)
+                    {
+                        MessageBox.Show(exc.Message);
+                        continue;
+                    }
+                }
 
                 var mapName = match.Info.MapId.ToString();
 
