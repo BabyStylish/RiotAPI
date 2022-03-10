@@ -142,8 +142,12 @@ namespace RiotAPI
                 lblGold.Text = goldEarned.ToString();
 
                 //Summoner Spells
-                var summonerD = participant.Summoner1Id.ToString();
-                var summonerF = participant.Summoner2Id.ToString();
+                var summonerDid = participant.Summoner1Id;
+                var summonerFid = participant.Summoner2Id;
+
+                summonerSpellDLoad(summonerDid);
+                summonerSpellFLoad(summonerFid);
+
 
                 //Items
                 var item0 = participant.Item0;
@@ -242,6 +246,108 @@ namespace RiotAPI
                     }
                 }
 
+            }
+        }
+
+        private void summonerSpellDLoad(int id)
+        {
+            switch (id)
+            {
+                case 1:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerCleanse.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 3:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerExhaust.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 4:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerFlash.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 6:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerGhost.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 7:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerHeal.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 11:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerSmite.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 12:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerTeleport.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 13:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerClarity.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 14:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerIgnite.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 21:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerBarrier.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 32:
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerMark.png");
+                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+            }
+        }
+
+        private void summonerSpellFLoad(int id)
+        {
+            switch (id)
+            {
+                case 1:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerCleanse.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 3:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerExhaust.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 4:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerFlash.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 6:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerGhost.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 7:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerHeal.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 11:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerSmite.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 12:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerTeleport.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 13:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerClarity.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 14:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerIgnite.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 21:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerBarrier.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 32:
+                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerMark.png");
+                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
             }
         }
 
