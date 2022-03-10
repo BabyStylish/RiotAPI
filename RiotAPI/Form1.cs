@@ -114,7 +114,7 @@ namespace RiotAPI
                     champImage.Load(championImagePath);
                     champImage.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
-                catch (Exception ex)
+                catch
                 {
                     try
                     {
