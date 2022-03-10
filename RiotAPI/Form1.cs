@@ -27,7 +27,7 @@ namespace RiotAPI
         private void btnSearch_Click(object sender, EventArgs e)
         {
             //Connection to Riot Services
-            var riotApi = RiotGamesApi.NewInstance("RGAPI-23e57d53-b572-4de4-9708-84490f070e16");
+            var riotApi = RiotGamesApi.NewInstance("RGAPI-9473a366-19a2-4287-b6db-812c328fdd4a");
 
             //Get summoner info - txtSearch
             var summoner = riotApi.SummonerV4().GetBySummonerName(Camille.Enums.PlatformRoute.EUW1, txtSearch.Text);
@@ -78,18 +78,17 @@ namespace RiotAPI
 
             //Match History  
             var matchID = riotApi.MatchV5().GetMatchIdsByPUUID(Camille.Enums.RegionalRoute.EUROPE, summoner.Puuid);
-            string[] allMatches = new string[20];
 
             foreach (string i in matchID)
             {
                 Console.WriteLine(i);
-                lblchampName.Text = txtSearch.Text;
                 var match = riotApi.MatchV5().GetMatch(Camille.Enums.RegionalRoute.EUROPE, i.ToString());
-                allMatches[i] = match;
                 var gameDuration = Convert.ToInt32(match.Info.GameDuration);
                 var gameDate = match.Info.GameCreation;
                 lblGameDuration.Text = gameDuration.ToString() + gameDate.ToString();
-                
+
+                lblchampName.Text = txtSearch.Text;
+
                 var gameMode = match.Info.GameMode;
                 
                 var gameType = match.Info.GameType;
@@ -100,17 +99,32 @@ namespace RiotAPI
                 var participant = match.Info.Participants.Where(p => p.SummonerId == summoner.Id).First();
 
                 var championLevel = participant.ChampLevel;
-                lblchampLevel.Text = champImage.ToString();
+                lblchampLevel.Text = championLevel.ToString();
 
                 var championPlayed = participant.ChampionName;
-                lblchampName.Text = champImage.ToString();
+                lblchampName.Text = championPlayed.ToString();
+
+                var championImagePath = "https://raw.communitydragon.org/12.4/game/assets/characters/" + Lowercase(championPlayed.ToString()) + "/hud/" + Lowercase(championPlayed.ToString()) + "_square.png";
+                champImage.Load(championImagePath);
+                champImage.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 var mapName = match.Info.MapId.ToString();
+
+                //KDA
                 var kills = participant.Kills;
                 var deaths = participant.Deaths;
+                var assists = participant.Assists;
+                lblKDA.Text = kills.ToString() + "/" + deaths.ToString() + "/" + assists.ToString();
+
+                //Gold Earned
                 var goldEarned = participant.GoldEarned;
+                lblGold.Text = goldEarned.ToString();
+
+                //Summoner Spells
                 var summonerD = participant.Summoner1Id.ToString();
                 var summonerF = participant.Summoner2Id.ToString();
+
+                //Items
                 var item0 = participant.Item0;
                 var item1 = participant.Item1;
                 var item2 = participant.Item2;
@@ -118,9 +132,16 @@ namespace RiotAPI
                 var item4 = participant.Item4;
                 var item5 = participant.Item5;
                 var item6 = participant.Item6;
+
+                //Vision Score
                 var visionScore = participant.VisionScore;
+                lblVisionScore.Text = visionScore.ToString();
+
+                //Wards Killed and Placed
                 var wardsKilled = participant.WardsKilled;
                 var wardsPlaced = participant.WardsPlaced;
+
+                //Win/Loss Image Load
                 var winloss = participant.Win;
                 if (winloss == true)
                 {
@@ -137,16 +158,16 @@ namespace RiotAPI
                     this.imgWinDefeat.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
 
-                var team = match.Info.Teams;
-                foreach (var t in team)
-                {
-                    var bans = match.Info.Teams[0].Bans;
-                    foreach (var b in bans)
-                    {
-                        var champName = b.ChampionId.ToString();
+                //var team = match.Info.Teams;
+                //foreach (var t in team)
+                //{
+                //    var bans = match.Info.Teams[0].Bans;
+                //    foreach (var b in bans)
+                //    {
+                //        var champName = b.ChampionId.ToString();
                         
-                    }
-                }
+                //    }
+                //}
 
             }
 
@@ -206,6 +227,11 @@ namespace RiotAPI
         static string UppercaseFirst(string s)
         {
             return char.ToUpper(s[0]) + s.Substring(1);
+        }
+
+        static string Lowercase(string s)
+        {
+            return s.ToLower();
         }
 
         private void txtSearch_Enter(object sender, EventArgs e)

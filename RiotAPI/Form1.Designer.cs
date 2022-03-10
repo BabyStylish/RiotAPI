@@ -62,10 +62,10 @@
             this.imgBan1 = new System.Windows.Forms.PictureBox();
             this.lblchampName = new System.Windows.Forms.Label();
             this.lblchampLevel = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblVisionScore = new System.Windows.Forms.Label();
+            this.lblCS = new System.Windows.Forms.Label();
+            this.lblGold = new System.Windows.Forms.Label();
+            this.lblKDA = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnMoreStat = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -304,10 +304,10 @@
             this.tabPage2.Controls.Add(this.imgBan1);
             this.tabPage2.Controls.Add(this.lblchampName);
             this.tabPage2.Controls.Add(this.lblchampLevel);
-            this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.lblVisionScore);
+            this.tabPage2.Controls.Add(this.lblCS);
+            this.tabPage2.Controls.Add(this.lblGold);
+            this.tabPage2.Controls.Add(this.lblKDA);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.btnMoreStat);
             this.tabPage2.Controls.Add(this.label5);
@@ -472,45 +472,45 @@
             this.lblchampLevel.TabIndex = 22;
             this.lblchampLevel.Text = "X";
             // 
-            // label10
+            // lblVisionScore
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1022, 169);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 25);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "X";
+            this.lblVisionScore.AutoSize = true;
+            this.lblVisionScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVisionScore.Location = new System.Drawing.Point(1022, 169);
+            this.lblVisionScore.Name = "lblVisionScore";
+            this.lblVisionScore.Size = new System.Drawing.Size(26, 25);
+            this.lblVisionScore.TabIndex = 21;
+            this.lblVisionScore.Text = "X";
             // 
-            // label9
+            // lblCS
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1022, 119);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 25);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "X";
+            this.lblCS.AutoSize = true;
+            this.lblCS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCS.Location = new System.Drawing.Point(1022, 119);
+            this.lblCS.Name = "lblCS";
+            this.lblCS.Size = new System.Drawing.Size(26, 25);
+            this.lblCS.TabIndex = 20;
+            this.lblCS.Text = "X";
             // 
-            // label8
+            // lblGold
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1022, 144);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(26, 25);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "X";
+            this.lblGold.AutoSize = true;
+            this.lblGold.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGold.Location = new System.Drawing.Point(1022, 144);
+            this.lblGold.Name = "lblGold";
+            this.lblGold.Size = new System.Drawing.Size(26, 25);
+            this.lblGold.TabIndex = 19;
+            this.lblGold.Text = "X";
             // 
-            // label7
+            // lblKDA
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1022, 94);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 25);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "X";
+            this.lblKDA.AutoSize = true;
+            this.lblKDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKDA.Location = new System.Drawing.Point(1022, 94);
+            this.lblKDA.Name = "lblKDA";
+            this.lblKDA.Size = new System.Drawing.Size(26, 25);
+            this.lblKDA.TabIndex = 18;
+            this.lblKDA.Text = "X";
             // 
             // label6
             // 
@@ -752,10 +752,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnMoreStat;
         private System.Windows.Forms.Label lblchampLevel;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblVisionScore;
+        private System.Windows.Forms.Label lblCS;
+        private System.Windows.Forms.Label lblGold;
+        private System.Windows.Forms.Label lblKDA;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblchampName;
         private System.Windows.Forms.PictureBox imgBan5;
