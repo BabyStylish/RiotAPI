@@ -13,6 +13,7 @@ using System.Collections;
 using System.Security.Cryptography;
 using System.Net;
 using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace RiotAPI
 {
@@ -27,17 +28,18 @@ namespace RiotAPI
         private void btnSearch_Click(object sender, EventArgs e)
         {
             //Connection to Riot Services
-            var riotApi = RiotGamesApi.NewInstance("RGAPI-9473a366-19a2-4287-b6db-812c328fdd4a");
+            var riotApi = RiotGamesApi.NewInstance("RGAPI-0db89d06-248b-4ddc-864b-66330e63fcdb");
 
             //Get summoner info - txtSearch
             var summoner = riotApi.SummonerV4().GetBySummonerName(Camille.Enums.PlatformRoute.EUW1, txtSearch.Text);
+            if(summoner == null)
+            {
+                MessageBox.Show("Summoner not found with name: " + txtSearch.Text);
+                return;
+            }
 
             //get SummonerID
             var accId = summoner.Id;
-            if(accId == null)
-            {
-                return;
-            }
             Console.WriteLine(accId);
 
             //Get Summoner info based on SummonerID
@@ -51,7 +53,6 @@ namespace RiotAPI
                 Console.WriteLine(rank);
                 var rankImgPath = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\Ranks\\Emblem_" + rank + ".png";
                 imgRank.Image = Image.FromFile(rankImgPath);
-                this.imgRank.SizeMode = PictureBoxSizeMode.StretchImage;
             }
 
             //Lp Display
@@ -65,7 +66,6 @@ namespace RiotAPI
             var iconID = summoner.ProfileIconId;
             string linkIcon = "https://raw.communitydragon.org/12.4/game/assets/ux/summonericons/profileicon" + iconID + ".png";
             imgSummonerIcon.Load(linkIcon);
-            imgSummonerIcon.SizeMode = PictureBoxSizeMode.StretchImage;
 
             //Mastery Points
             var masteryPoints = league[0].LeaguePoints;
@@ -109,28 +109,16 @@ namespace RiotAPI
                 lblchampName.Text = championPlayed.ToString();
 
 
-                //Repository Exception - Not updated (Doesn't have all champion icons)
-                //Ignoring names that don't follow the pattern
-                //DB to be implemented
-                var championImagePath = "https://raw.communitydragon.org/12.4/game/assets/characters/" + Lowercase(championPlayed.ToString()) + "/hud/" + Lowercase(championPlayed.ToString()) + "_square.png";
+                //Champion icon
+                var championImagePath = "http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + championPlayed.ToString() + ".png";
                 try
                 {
                     champImage.Load(championImagePath);
-                    champImage.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
-                catch
+                catch (Exception ex)
                 {
-                    try
-                    {
-                        var championImagePath0 = "https://raw.communitydragon.org/12.4/game/assets/characters/" + Lowercase(championPlayed.ToString()) + "/hud/" + Lowercase(championPlayed.ToString()) + "_square_0.png";
-                        champImage.Load(championImagePath0);
-                        champImage.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
-                    catch (Exception exc)
-                    {
-                        MessageBox.Show(exc.Message);
+                        MessageBox.Show(ex.Message);
                         continue;
-                    }
                 }
 
                 var mapName = match.Info.MapId.ToString();
@@ -146,14 +134,15 @@ namespace RiotAPI
                 lblGold.Text = goldEarned.ToString();
 
                 //Summoner Spells
+                //Using Methods SummonerSpellDLoad and SummonerSpellFLoad
                 var summonerDid = participant.Summoner1Id;
                 var summonerFid = participant.Summoner2Id;
 
-                summonerSpellDLoad(summonerDid);
-                summonerSpellFLoad(summonerFid);
+                summonerSpellLoad(summonerDid, imgSummonerD);
+                summonerSpellLoad(summonerFid, imgSummonerF);
 
 
-                //Items
+                //Items and loading icon
                 var item0 = participant.Item0;
                 var item1 = participant.Item1;
                 var item2 = participant.Item2;
@@ -161,6 +150,21 @@ namespace RiotAPI
                 var item4 = participant.Item4;
                 var item5 = participant.Item5;
                 var item6 = participant.Item6;
+                if(item0 != 0)
+                    imgItem1.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item0 + ".png");
+                if(item1 != 0)
+                    imgItem2.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item1 + ".png");
+                if (item2 != 0)
+                    imgItem3.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item2 + ".png");
+                if (item3 != 0)
+                    imgItem4.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item3 + ".png");
+                if (item4 != 0)
+                    imgItem5.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item4 + ".png");
+                if (item5 != 0)
+                    imgItem6.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item5 + ".png");
+                if (item6 != 0)
+                    imgItem7.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item6 + ".png");
+
 
                 //Vision Score
                 var visionScore = participant.VisionScore;
@@ -177,26 +181,13 @@ namespace RiotAPI
                     //victory
                     var victoryImg = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\WinDefeat\\victorylol.jpg";
                     imgWinDefeat.Image = Image.FromFile(victoryImg);
-                    this.imgWinDefeat.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
                 else
                 {
                     //Defeat
                     var defeatImg = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\WinDefeat\\defeat1.png";
                     imgWinDefeat.Image = Image.FromFile(defeatImg);
-                    this.imgWinDefeat.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
-
-                //var team = match.Info.Teams;
-                //foreach (var t in team)
-                //{
-                //    var bans = match.Info.Teams[0].Bans;
-                //    foreach (var b in bans)
-                //    {
-                //        var champName = b.ChampionId.ToString();
-                        
-                //    }
-                //}
 
             }
 
@@ -205,49 +196,24 @@ namespace RiotAPI
         private void imgLoad(RiotGamesApi riotApi, Camille.RiotGames.SummonerV4.Summoner summoner)
         {
             var masteries = riotApi.ChampionMasteryV4().GetAllChampionMasteries(Camille.Enums.PlatformRoute.EUW1, summoner.Id);
+            Console.WriteLine(summoner.Id);
             for (var i = 0; i < 3; i++)
             {
-                try
+                var topChamps = masteries[i];
+                var champID = (int)topChamps.ChampionId;
+                var champ = champions[champID.ToString()];
+                string linkChamp = "http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champ.Id + ".png";
+                if (i == 0)
                 {
-                    var topChamps = masteries[i];
-                    var champ = topChamps.ChampionId.ToString().ToLower();
-                    string linkChamp = "https://raw.communitydragon.org/12.4/game/assets/characters/" + champ.ToString() + "/hud/" + champ.ToString() + "_square.png";
-                    if (i == 0)
-                    {
-                        imgTopChamp1.Load(linkChamp);
-                        imgTopChamp1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
-                    else if (i == 1)
-                    {
-                        imgTopChamp2.Load(linkChamp);
-                        imgTopChamp2.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
-                    else if (i == 2)
-                    {
-                        imgTopChamp3.Load(linkChamp);
-                        imgTopChamp3.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
+                    imgTopChamp1.Load(linkChamp);
                 }
-                catch
+                else if (i == 1)
                 {
-                    var topChamps = masteries[i];
-                    var champ = topChamps.ChampionId.ToString().ToLower();
-                    string linkChamp = "https://raw.communitydragon.org/12.4/game/assets/characters/" + champ.ToString() + "/hud/" + champ.ToString() + "_square_0.png";
-                    if (i == 0)
-                    {
-                        imgTopChamp1.Load(linkChamp);
-                        imgTopChamp1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
-                    else if (i == 1)
-                    {
-                        imgTopChamp2.Load(linkChamp);
-                        imgTopChamp2.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
-                    else if (i == 2)
-                    {
-                        imgTopChamp3.Load(linkChamp);
-                        imgTopChamp3.SizeMode = PictureBoxSizeMode.StretchImage;
-                    }
+                    imgTopChamp2.Load(linkChamp);
+                }
+                else if (i == 2)
+                {
+                    imgTopChamp3.Load(linkChamp);
                 }
 
             }
@@ -263,123 +229,46 @@ namespace RiotAPI
             return s.ToLower();
         }
 
-        private void summonerSpellDLoad(int id)
+        private void summonerSpellLoad(int id, PictureBox image)
         {
-            var path = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\";
             switch (id)
             {
                 case 1:
-                    using (FileStream fs = new FileStream(path + "SummonerCleanse.png", FileMode.Open, FileAccess.Read))
-                    {
-                        using (Image original = Image.FromStream(fs))
-                        {
-                            imgSummonerD.Image = original;
-                            this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
-                            break;
-                        }
-                    }
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerBoost.png");
+                    break;
                 case 3:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerExhaust.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerExhaust.png");
                     break;
                 case 4:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerFlash.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerFlash.png");
                     break;
                 case 6:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerFlash.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerHaste.png");
                     break;
-                    //using (FileStream fs = new FileStream(path + "SummonerGhost.png", FileMode.Open, FileAccess.Read))
-                    //{
-                    //    using (Image original = Image.FromStream(fs))
-                    //    {
-                    //        imgSummonerD.Image = original;
-                    //        this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
-                    //        break;
-                    //    }
-                    //}
                 case 7:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerHeal.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerHeal.png");
                     break;
                 case 11:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerSmite.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerSmite.png");
                     break;
                 case 12:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerTeleport.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerTeleport.png");
                     break;
                 case 13:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerClarity.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerMana.png");
                     break;
                 case 14:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerIgnite.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerDot.png");
                     break;
                 case 21:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerBarrier.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerBarrier.png");
                     break;
                 case 32:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerMark.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerSnowball.png");
                     break;
             }
         }
 
-        private void summonerSpellFLoad(int id)
-        {
-            switch (id)
-            {
-                case 1:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerCleanse.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 3:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerExhaust.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 4:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerFlash.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 6:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerGhost.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 7:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerHeal.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 11:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerSmite.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 12:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerTeleport.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 13:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerClarity.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 14:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerIgnite.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 21:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerBarrier.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-                case 32:
-                    imgSummonerF.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerMark.png");
-                    this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
-            }
-        }
 
         private void txtSearch_Enter(object sender, EventArgs e)
         {
@@ -429,8 +318,22 @@ namespace RiotAPI
             }
         }
 
+        Dictionary<string, Champion> champions = new Dictionary<string, Champion>();
         private void Form1_Load(object sender, EventArgs e)
         {
+            using (var client = new HttpClient())
+            {
+                var response = client.GetAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json").Result;
+                if(response.IsSuccessStatusCode)
+                {
+                    var result = JsonConvert.DeserializeObject<Root>(response.Content.ReadAsStringAsync().Result);
+                    foreach(var champion in result.Data.Values)
+                    {
+                        champions.Add(champion.Key, champion);
+                    }
+                }
+            }
+
             if (String.IsNullOrEmpty(path))
             {
                 return;

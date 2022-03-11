@@ -235,17 +235,6 @@
     <Content Include="Ranks\Emblem_Master.png" />
     <Content Include="Ranks\Emblem_Platinum.png" />
     <Content Include="Ranks\Emblem_Silver.png" />
-    <Content Include="SummonerSpells\SummonerBarrier.png" />
-    <Content Include="SummonerSpells\SummonerClarity.png" />
-    <Content Include="SummonerSpells\SummonerCleanse.png" />
-    <Content Include="SummonerSpells\SummonerExhaust.png" />
-    <Content Include="SummonerSpells\SummonerFlash.png" />
-    <Content Include="SummonerSpells\SummonerGhost.png" />
-    <Content Include="SummonerSpells\SummonerHeal.png" />
-    <Content Include="SummonerSpells\SummonerIgnite.png" />
-    <Content Include="SummonerSpells\SummonerMark.png" />
-    <Content Include="SummonerSpells\SummonerSmite.png" />
-    <Content Include="SummonerSpells\SummonerTeleport.png" />
     <Content Include="WinDefeat\defeat1.png" />
     <Content Include="WinDefeat\victorylol.jpg" />
   </ItemGroup>

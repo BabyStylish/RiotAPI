@@ -130,6 +130,7 @@
             this.imgSummonerIcon.Location = new System.Drawing.Point(20, 6);
             this.imgSummonerIcon.Name = "imgSummonerIcon";
             this.imgSummonerIcon.Size = new System.Drawing.Size(238, 226);
+            this.imgSummonerIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgSummonerIcon.TabIndex = 1;
             this.imgSummonerIcon.TabStop = false;
             // 
@@ -139,6 +140,7 @@
             this.imgRank.Location = new System.Drawing.Point(37, 299);
             this.imgRank.Name = "imgRank";
             this.imgRank.Size = new System.Drawing.Size(231, 249);
+            this.imgRank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgRank.TabIndex = 4;
             this.imgRank.TabStop = false;
             // 
@@ -147,6 +149,7 @@
             this.imgTopChamp1.Location = new System.Drawing.Point(442, 386);
             this.imgTopChamp1.Name = "imgTopChamp1";
             this.imgTopChamp1.Size = new System.Drawing.Size(192, 181);
+            this.imgTopChamp1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgTopChamp1.TabIndex = 5;
             this.imgTopChamp1.TabStop = false;
             // 
@@ -155,6 +158,7 @@
             this.imgTopChamp2.Location = new System.Drawing.Point(640, 386);
             this.imgTopChamp2.Name = "imgTopChamp2";
             this.imgTopChamp2.Size = new System.Drawing.Size(192, 181);
+            this.imgTopChamp2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgTopChamp2.TabIndex = 6;
             this.imgTopChamp2.TabStop = false;
             // 
@@ -199,6 +203,7 @@
             this.imgTopChamp3.Location = new System.Drawing.Point(838, 386);
             this.imgTopChamp3.Name = "imgTopChamp3";
             this.imgTopChamp3.Size = new System.Drawing.Size(192, 181);
+            this.imgTopChamp3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgTopChamp3.TabIndex = 12;
             this.imgTopChamp3.TabStop = false;
             // 
@@ -370,6 +375,7 @@
             this.imgWinDefeat.Location = new System.Drawing.Point(507, 16);
             this.imgWinDefeat.Name = "imgWinDefeat";
             this.imgWinDefeat.Size = new System.Drawing.Size(338, 233);
+            this.imgWinDefeat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgWinDefeat.TabIndex = 33;
             this.imgWinDefeat.TabStop = false;
             // 
@@ -418,6 +424,7 @@
             this.imgBan5.Location = new System.Drawing.Point(366, 541);
             this.imgBan5.Name = "imgBan5";
             this.imgBan5.Size = new System.Drawing.Size(70, 67);
+            this.imgBan5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgBan5.TabIndex = 28;
             this.imgBan5.TabStop = false;
             // 
@@ -426,6 +433,7 @@
             this.imgBan4.Location = new System.Drawing.Point(290, 541);
             this.imgBan4.Name = "imgBan4";
             this.imgBan4.Size = new System.Drawing.Size(70, 67);
+            this.imgBan4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgBan4.TabIndex = 27;
             this.imgBan4.TabStop = false;
             // 
@@ -434,6 +442,7 @@
             this.imgBan3.Location = new System.Drawing.Point(214, 541);
             this.imgBan3.Name = "imgBan3";
             this.imgBan3.Size = new System.Drawing.Size(70, 67);
+            this.imgBan3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgBan3.TabIndex = 26;
             this.imgBan3.TabStop = false;
             // 
@@ -442,6 +451,7 @@
             this.imgBan2.Location = new System.Drawing.Point(138, 541);
             this.imgBan2.Name = "imgBan2";
             this.imgBan2.Size = new System.Drawing.Size(70, 67);
+            this.imgBan2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgBan2.TabIndex = 25;
             this.imgBan2.TabStop = false;
             // 
@@ -450,6 +460,7 @@
             this.imgBan1.Location = new System.Drawing.Point(62, 541);
             this.imgBan1.Name = "imgBan1";
             this.imgBan1.Size = new System.Drawing.Size(70, 67);
+            this.imgBan1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgBan1.TabIndex = 24;
             this.imgBan1.TabStop = false;
             // 
@@ -568,6 +579,7 @@
             this.imgSummonerF.Location = new System.Drawing.Point(138, 306);
             this.imgSummonerF.Name = "imgSummonerF";
             this.imgSummonerF.Size = new System.Drawing.Size(70, 67);
+            this.imgSummonerF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgSummonerF.TabIndex = 12;
             this.imgSummonerF.TabStop = false;
             // 
@@ -576,6 +588,7 @@
             this.imgSummonerD.Location = new System.Drawing.Point(62, 306);
             this.imgSummonerD.Name = "imgSummonerD";
             this.imgSummonerD.Size = new System.Drawing.Size(70, 67);
+            this.imgSummonerD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgSummonerD.TabIndex = 11;
             this.imgSummonerD.TabStop = false;
             // 
@@ -584,6 +597,7 @@
             this.imgItem7.Location = new System.Drawing.Point(715, 306);
             this.imgItem7.Name = "imgItem7";
             this.imgItem7.Size = new System.Drawing.Size(70, 67);
+            this.imgItem7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem7.TabIndex = 10;
             this.imgItem7.TabStop = false;
             // 
@@ -592,6 +606,7 @@
             this.imgItem6.Location = new System.Drawing.Point(639, 306);
             this.imgItem6.Name = "imgItem6";
             this.imgItem6.Size = new System.Drawing.Size(70, 67);
+            this.imgItem6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem6.TabIndex = 9;
             this.imgItem6.TabStop = false;
             // 
@@ -600,6 +615,7 @@
             this.imgItem5.Location = new System.Drawing.Point(563, 306);
             this.imgItem5.Name = "imgItem5";
             this.imgItem5.Size = new System.Drawing.Size(70, 67);
+            this.imgItem5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem5.TabIndex = 8;
             this.imgItem5.TabStop = false;
             // 
@@ -608,6 +624,7 @@
             this.imgItem4.Location = new System.Drawing.Point(487, 306);
             this.imgItem4.Name = "imgItem4";
             this.imgItem4.Size = new System.Drawing.Size(70, 67);
+            this.imgItem4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem4.TabIndex = 7;
             this.imgItem4.TabStop = false;
             // 
@@ -616,6 +633,7 @@
             this.imgItem3.Location = new System.Drawing.Point(411, 306);
             this.imgItem3.Name = "imgItem3";
             this.imgItem3.Size = new System.Drawing.Size(70, 67);
+            this.imgItem3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem3.TabIndex = 6;
             this.imgItem3.TabStop = false;
             // 
@@ -624,6 +642,7 @@
             this.imgItem2.Location = new System.Drawing.Point(335, 306);
             this.imgItem2.Name = "imgItem2";
             this.imgItem2.Size = new System.Drawing.Size(70, 67);
+            this.imgItem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem2.TabIndex = 5;
             this.imgItem2.TabStop = false;
             // 
@@ -642,6 +661,7 @@
             this.imgItem1.Location = new System.Drawing.Point(259, 306);
             this.imgItem1.Name = "imgItem1";
             this.imgItem1.Size = new System.Drawing.Size(70, 67);
+            this.imgItem1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem1.TabIndex = 3;
             this.imgItem1.TabStop = false;
             // 
@@ -650,6 +670,7 @@
             this.champImage.Location = new System.Drawing.Point(62, 53);
             this.champImage.Name = "champImage";
             this.champImage.Size = new System.Drawing.Size(195, 196);
+            this.champImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.champImage.TabIndex = 2;
             this.champImage.TabStop = false;
             // 
