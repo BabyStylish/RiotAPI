@@ -391,10 +391,5 @@ namespace RiotAPI
             ms.MdiParent = this;
             ms.Show();
         }
-
-        //bool test(FileInfo f)
-        //{
-        //    return f.Extension == "jpg";
-        //}
     }
 }
