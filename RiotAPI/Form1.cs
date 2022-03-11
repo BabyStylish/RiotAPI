@@ -44,11 +44,15 @@ namespace RiotAPI
             //Dinamically Search for rank image that corresponds to Summoner rank
             //Load image from filepath rankImgPath and Stretch
             var league = riotApi.LeagueV4().GetLeagueEntriesForSummoner(Camille.Enums.PlatformRoute.EUW1, accId);
-            var rank = UppercaseFirst(league[0].Tier.ToString().ToLower());
-            Console.WriteLine(rank);
-            var rankImgPath = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\Ranks\\Emblem_" + rank + ".png";
-            imgRank.Image = Image.FromFile(rankImgPath);
-            this.imgRank.SizeMode = PictureBoxSizeMode.StretchImage;
+            var soloqueue = league.Where(l => l.QueueType == Camille.Enums.QueueType.RANKED_SOLO_5x5).FirstOrDefault();
+            if (soloqueue != null)
+            {
+                var rank = UppercaseFirst(soloqueue.Tier.ToString().ToLower());
+                Console.WriteLine(rank);
+                var rankImgPath = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\Ranks\\Emblem_" + rank + ".png";
+                imgRank.Image = Image.FromFile(rankImgPath);
+                this.imgRank.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
 
             //Lp Display
             lblLP.Text = league[0].LeaguePoints.ToString() + " LP";
@@ -249,14 +253,31 @@ namespace RiotAPI
             }
         }
 
+        static string UppercaseFirst(string s)
+        {
+            return char.ToUpper(s[0]) + s.Substring(1);
+        }
+
+        static string Lowercase(string s)
+        {
+            return s.ToLower();
+        }
+
         private void summonerSpellDLoad(int id)
         {
+            var path = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\";
             switch (id)
             {
                 case 1:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerCleanse.png");
-                    this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
-                    break;
+                    using (FileStream fs = new FileStream(path + "SummonerCleanse.png", FileMode.Open, FileAccess.Read))
+                    {
+                        using (Image original = Image.FromStream(fs))
+                        {
+                            imgSummonerD.Image = original;
+                            this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+                        }
+                    }
                 case 3:
                     imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerExhaust.png");
                     this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -266,9 +287,18 @@ namespace RiotAPI
                     this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
                 case 6:
-                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerGhost.png");
+                    imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerFlash.png");
                     this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
+                    //using (FileStream fs = new FileStream(path + "SummonerGhost.png", FileMode.Open, FileAccess.Read))
+                    //{
+                    //    using (Image original = Image.FromStream(fs))
+                    //    {
+                    //        imgSummonerD.Image = original;
+                    //        this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
+                    //        break;
+                    //    }
+                    //}
                 case 7:
                     imgSummonerD.Image = Image.FromFile("D:\\VS_Repo\\RiotAPI\\RiotAPI\\SummonerSpells\\SummonerHeal.png");
                     this.imgSummonerD.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -349,16 +379,6 @@ namespace RiotAPI
                     this.imgSummonerF.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
             }
-        }
-
-        static string UppercaseFirst(string s)
-        {
-            return char.ToUpper(s[0]) + s.Substring(1);
-        }
-
-        static string Lowercase(string s)
-        {
-            return s.ToLower();
         }
 
         private void txtSearch_Enter(object sender, EventArgs e)
