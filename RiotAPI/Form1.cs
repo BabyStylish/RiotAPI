@@ -271,7 +271,10 @@ namespace RiotAPI
 
         public void btnNextGame_Click(object sender, EventArgs e)
         {
-
+            if (dropdownGame.SelectedIndex < dropdownGame.Items.Count - 1)
+            {
+                dropdownGame.SelectedIndex = dropdownGame.SelectedIndex + 1;
+            }
         }
 
         private void btnMoreStat_Click(object sender, EventArgs e)
@@ -282,7 +285,10 @@ namespace RiotAPI
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
-
+            if (dropdownGame.SelectedIndex > 0)
+            {
+                dropdownGame.SelectedIndex = dropdownGame.SelectedIndex - 1;
+            }
         }
 
         private async void dropdownGame_SelectedIndexChanged(object sender, EventArgs e)
