@@ -24,11 +24,14 @@ namespace RiotAPI
             InitializeComponent();
             
         }
-    
-        private void btnSearch_Click(object sender, EventArgs e)
+
+        //Connection to Riot Services
+        RiotGamesApi riotApi = RiotGamesApi.NewInstance("RGAPI-7aee64c2-2586-40dd-a5fc-77ac42697424");
+        public async void btnSearch_Click(object sender, EventArgs e)
         {
-            //Connection to Riot Services
-            var riotApi = RiotGamesApi.NewInstance("RGAPI-0db89d06-248b-4ddc-864b-66330e63fcdb");
+            //clear Form
+            dropdownGame.Items.Clear();
+            Clearform();            
 
             //Get summoner info - txtSearch
             var summoner = riotApi.SummonerV4().GetBySummonerName(Camille.Enums.PlatformRoute.EUW1, txtSearch.Text);
@@ -82,118 +85,13 @@ namespace RiotAPI
 
             //Match History  
             var matchID = riotApi.MatchV5().GetMatchIdsByPUUID(Camille.Enums.RegionalRoute.EUROPE, summoner.Puuid);
-
             foreach (string i in matchID)
             {
-                Console.WriteLine(i);
-                var match = riotApi.MatchV5().GetMatch(Camille.Enums.RegionalRoute.EUROPE, i.ToString());
-                var gameDuration = Convert.ToInt32(match.Info.GameDuration);
-                var gameDate = match.Info.GameCreation;
-                lblGameDuration.Text = gameDuration.ToString() + gameDate.ToString();
-
-                lblchampName.Text = txtSearch.Text;
-
-                var gameMode = match.Info.GameMode;
-                
-                var gameType = match.Info.GameType;
-
-                var map = match.Info.MapId.ToString();
-                lblMap.Text = map;
-
-                var participant = match.Info.Participants.Where(p => p.SummonerId == summoner.Id).First();
-
-                var championLevel = participant.ChampLevel;
-                lblchampLevel.Text = championLevel.ToString();
-
-                var championPlayed = participant.ChampionName;
-                lblchampName.Text = championPlayed.ToString();
-
-
-                //Champion icon
-                var championImagePath = "http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + championPlayed.ToString() + ".png";
-                try
-                {
-                    champImage.Load(championImagePath);
-                }
-                catch (Exception ex)
-                {
-                        MessageBox.Show(ex.Message);
-                        continue;
-                }
-
-                var mapName = match.Info.MapId.ToString();
-
-                //KDA
-                var kills = participant.Kills;
-                var deaths = participant.Deaths;
-                var assists = participant.Assists;
-                lblKDA.Text = kills.ToString() + "/" + deaths.ToString() + "/" + assists.ToString();
-
-                //Gold Earned
-                var goldEarned = participant.GoldEarned;
-                lblGold.Text = goldEarned.ToString();
-
-                //Summoner Spells
-                //Using Methods SummonerSpellDLoad and SummonerSpellFLoad
-                var summonerDid = participant.Summoner1Id;
-                var summonerFid = participant.Summoner2Id;
-
-                summonerSpellLoad(summonerDid, imgSummonerD);
-                summonerSpellLoad(summonerFid, imgSummonerF);
-
-
-                //Items and loading icon
-                var item0 = participant.Item0;
-                var item1 = participant.Item1;
-                var item2 = participant.Item2;
-                var item3 = participant.Item3;
-                var item4 = participant.Item4;
-                var item5 = participant.Item5;
-                var item6 = participant.Item6;
-                if(item0 != 0)
-                    imgItem1.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item0 + ".png");
-                if(item1 != 0)
-                    imgItem2.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item1 + ".png");
-                if (item2 != 0)
-                    imgItem3.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item2 + ".png");
-                if (item3 != 0)
-                    imgItem4.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item3 + ".png");
-                if (item4 != 0)
-                    imgItem5.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item4 + ".png");
-                if (item5 != 0)
-                    imgItem6.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item5 + ".png");
-                if (item6 != 0)
-                    imgItem7.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item6 + ".png");
-
-
-                //Vision Score
-                var visionScore = participant.VisionScore;
-                lblVisionScore.Text = visionScore.ToString();
-
-                //Wards Killed and Placed
-                var wardsKilled = participant.WardsKilled;
-                var wardsPlaced = participant.WardsPlaced;
-
-                //Win/Loss Image Load
-                var winloss = participant.Win;
-                if (winloss == true)
-                {
-                    //victory
-                    var victoryImg = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\WinDefeat\\victorylol.jpg";
-                    imgWinDefeat.Image = Image.FromFile(victoryImg);
-                }
-                else
-                {
-                    //Defeat
-                    var defeatImg = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\WinDefeat\\defeat1.png";
-                    imgWinDefeat.Image = Image.FromFile(defeatImg);
-                }
-
+                dropdownGame.Items.Add(i);
             }
-
         }
 
-        private void imgLoad(RiotGamesApi riotApi, Camille.RiotGames.SummonerV4.Summoner summoner)
+        private async void imgLoad(RiotGamesApi riotApi, Camille.RiotGames.SummonerV4.Summoner summoner)
         {
             var masteries = riotApi.ChampionMasteryV4().GetAllChampionMasteries(Camille.Enums.PlatformRoute.EUW1, summoner.Id);
             Console.WriteLine(summoner.Id);
@@ -205,17 +103,16 @@ namespace RiotAPI
                 string linkChamp = "http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champ.Id + ".png";
                 if (i == 0)
                 {
-                    imgTopChamp1.Load(linkChamp);
+                    imgTopChamp1.LoadAsync(linkChamp);
                 }
                 else if (i == 1)
                 {
-                    imgTopChamp2.Load(linkChamp);
+                    imgTopChamp2.LoadAsync(linkChamp);
                 }
                 else if (i == 2)
                 {
-                    imgTopChamp3.Load(linkChamp);
+                    imgTopChamp3.LoadAsync(linkChamp);
                 }
-
             }
         }
 
@@ -229,42 +126,42 @@ namespace RiotAPI
             return s.ToLower();
         }
 
-        private void summonerSpellLoad(int id, PictureBox image)
+        private async void summonerSpellLoad(int id, PictureBox image)
         {
             switch (id)
             {
                 case 1:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerBoost.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerBoost.png");
                     break;
                 case 3:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerExhaust.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerExhaust.png");
                     break;
                 case 4:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerFlash.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerFlash.png");
                     break;
                 case 6:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerHaste.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerHaste.png");
                     break;
                 case 7:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerHeal.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerHeal.png");
                     break;
                 case 11:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerSmite.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerSmite.png");
                     break;
                 case 12:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerTeleport.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerTeleport.png");
                     break;
                 case 13:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerMana.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerMana.png");
                     break;
                 case 14:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerDot.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerDot.png");
                     break;
                 case 21:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerBarrier.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerBarrier.png");
                     break;
                 case 32:
-                    image.Load("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerSnowball.png");
+                    image.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/spell/SummonerSnowball.png");
                     break;
             }
         }
@@ -372,24 +269,167 @@ namespace RiotAPI
 
         }
 
-        int c = 1;
-
         public void btnNextGame_Click(object sender, EventArgs e)
         {
-            c = c++;
-            if(c >= 20)
-            {
-                c = 20;
-            }
-            c.ToString();
 
         }
 
         private void btnMoreStat_Click(object sender, EventArgs e)
         {
             MoreStats ms = new MoreStats();
-            ms.MdiParent = this;
             ms.Show();
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void dropdownGame_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var summoner = riotApi.SummonerV4().GetBySummonerName(Camille.Enums.PlatformRoute.EUW1, txtSearch.Text);
+            var match = riotApi.MatchV5().GetMatch(Camille.Enums.RegionalRoute.EUROPE, dropdownGame.SelectedItem.ToString());
+            //Game Duration
+            var gameDuration = match.Info.GameDuration;
+            TimeSpan t = TimeSpan.FromSeconds(gameDuration);
+            string fDuration = string.Format("{0:D2}h:{1:D2}m:{2:D2}s:{3:D3}ms",
+                        t.Hours,
+                        t.Minutes,
+                        t.Seconds,
+                        t.Milliseconds);
+            var gameDate = match.Info.GameCreation;
+            lblGameDuration.Text = fDuration;
+
+            //Champion Name
+            lblchampName.Text = txtSearch.Text;
+
+            //GameMode and GameType
+            var gameMode = match.Info.GameMode;
+            lblGameMode.Text = gameMode.ToString();
+
+            //Map
+            var map = match.Info.MapId.ToString();
+            lblMap.Text = map;
+
+            //Champion Info
+            var participant = match.Info.Participants.Where(p => p.SummonerId == summoner.Id).First();
+
+            var championLevel = participant.ChampLevel;
+            lblchampLevel.Text = championLevel.ToString();
+
+            var championPlayed = participant.ChampionName;
+            lblchampName.Text = championPlayed.ToString();
+
+
+            //Champion icon
+            var championImagePath = "http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + championPlayed.ToString() + ".png";
+            try
+            {
+                champImage.LoadAsync(championImagePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                //continue;
+            }            
+
+            //KDA
+            var kills = participant.Kills;
+            var deaths = participant.Deaths;
+            var assists = participant.Assists;
+            lblKDA.Text = kills.ToString() + "/" + deaths.ToString() + "/" + assists.ToString();
+
+            //Minion Kills
+            var CS = participant.TotalMinionsKilled.ToString();
+            lblCS.Text = CS; 
+
+            //Gold Earned
+            var goldEarned = participant.GoldEarned;
+            lblGold.Text = goldEarned.ToString();
+
+            //Summoner Spells
+            //Using Methods SummonerSpellDLoad and SummonerSpellFLoad
+            var summonerDid = participant.Summoner1Id;
+            var summonerFid = participant.Summoner2Id;
+
+            summonerSpellLoad(summonerDid, imgSummonerD);
+            summonerSpellLoad(summonerFid, imgSummonerF);
+
+            //Items and loading icon
+            var item0 = participant.Item0;
+            var item1 = participant.Item1;
+            var item2 = participant.Item2;
+            var item3 = participant.Item3;
+            var item4 = participant.Item4;
+            var item5 = participant.Item5;
+            var item6 = participant.Item6;
+            if (item0 != 0)
+                imgItem1.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item0 + ".png");
+            if (item1 != 0)
+                imgItem2.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item1 + ".png");
+            if (item2 != 0)
+                imgItem3.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item2 + ".png");
+            if (item3 != 0)
+                imgItem4.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item3 + ".png");
+            if (item4 != 0)
+                imgItem5.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item4 + ".png");
+            if (item5 != 0)
+                imgItem6.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item5 + ".png");
+            if (item6 != 0)
+                imgItem7.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/item/" + item6 + ".png");
+
+
+            //Vision Score
+            var visionScore = participant.VisionScore;
+            lblVisionScore.Text = visionScore.ToString();
+
+            //Wards Killed and Placed
+            var wardsKilled = participant.WardsKilled;
+            var wardsPlaced = participant.WardsPlaced;
+
+            //Win/Loss Image Load
+            var winloss = participant.Win;
+            if (winloss == true)
+            {
+                //victory
+                var victoryImg = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\WinDefeat\\victorylol.jpg";
+                imgWinDefeat.Image = Image.FromFile(victoryImg);
+            }
+            else
+            {
+                //Defeat
+                var defeatImg = "D:\\VS_Repo\\RiotAPI\\RiotAPI\\WinDefeat\\defeat1.png";
+                imgWinDefeat.Image = Image.FromFile(defeatImg);
+            }
+        }
+
+        public void Clearform()
+        {
+            imgItem1.Image = null;
+            imgItem2.Image = null;
+            imgItem3.Image = null;
+            imgItem4.Image = null;
+            imgItem5.Image = null;
+            imgItem6.Image = null;
+            imgItem7.Image = null;
+            imgBan1.Image = null;
+            imgBan2.Image = null;
+            imgBan3.Image = null;
+            imgBan4.Image = null;
+            imgBan5.Image = null;
+            lblCS.Text = "";
+            lblGold.Text = "";
+            lblGameDuration.Text = "";
+            lblKDA.Text = "";
+            lblVisionScore.Text = "";
+            champImage.Image = null;
+            imgWinDefeat.Image = null;
+            lblchampLevel.Text = "";
+            lblchampName.Text = "";
+            lblMap.Text = "";
+            lblGameMode.Text = "";
+            imgSummonerD.Image = null;
+            imgSummonerF.Image = null;
         }
     }
 }

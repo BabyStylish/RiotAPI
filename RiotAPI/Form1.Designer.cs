@@ -47,11 +47,14 @@
             this.lblLevel = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dropdownGame = new System.Windows.Forms.ComboBox();
+            this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNextGame = new System.Windows.Forms.Button();
             this.lblGameDuration = new System.Windows.Forms.Label();
             this.lblDuration = new System.Windows.Forms.Label();
             this.imgWinDefeat = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblGameMode = new System.Windows.Forms.Label();
             this.lblMap = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -294,11 +297,14 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.dropdownGame);
+            this.tabPage2.Controls.Add(this.btnPrevious);
             this.tabPage2.Controls.Add(this.btnNextGame);
             this.tabPage2.Controls.Add(this.lblGameDuration);
             this.tabPage2.Controls.Add(this.lblDuration);
             this.tabPage2.Controls.Add(this.imgWinDefeat);
-            this.tabPage2.Controls.Add(this.label14);
+            this.tabPage2.Controls.Add(this.lblGameMode);
             this.tabPage2.Controls.Add(this.lblMap);
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.label11);
@@ -339,10 +345,40 @@
             this.tabPage2.Text = "Match History";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 25);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Game:";
+            // 
+            // dropdownGame
+            // 
+            this.dropdownGame.FormattingEnabled = true;
+            this.dropdownGame.Location = new System.Drawing.Point(102, 16);
+            this.dropdownGame.Name = "dropdownGame";
+            this.dropdownGame.Size = new System.Drawing.Size(121, 21);
+            this.dropdownGame.TabIndex = 38;
+            this.dropdownGame.SelectedIndexChanged += new System.EventHandler(this.dropdownGame_SelectedIndexChanged);
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.Location = new System.Drawing.Point(1020, 357);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(164, 99);
+            this.btnPrevious.TabIndex = 37;
+            this.btnPrevious.Text = "Previous Game";
+            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
             // btnNextGame
             // 
             this.btnNextGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextGame.Location = new System.Drawing.Point(1020, 357);
+            this.btnNextGame.Location = new System.Drawing.Point(1020, 252);
             this.btnNextGame.Name = "btnNextGame";
             this.btnNextGame.Size = new System.Drawing.Size(164, 99);
             this.btnNextGame.TabIndex = 36;
@@ -379,15 +415,15 @@
             this.imgWinDefeat.TabIndex = 33;
             this.imgWinDefeat.TabStop = false;
             // 
-            // label14
+            // lblGameMode
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1022, 72);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(26, 25);
-            this.label14.TabIndex = 32;
-            this.label14.Text = "X";
+            this.lblGameMode.AutoSize = true;
+            this.lblGameMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGameMode.Location = new System.Drawing.Point(1022, 72);
+            this.lblGameMode.Name = "lblGameMode";
+            this.lblGameMode.Size = new System.Drawing.Size(26, 25);
+            this.lblGameMode.TabIndex = 32;
+            this.lblGameMode.Text = "X";
             // 
             // lblMap
             // 
@@ -785,12 +821,15 @@
         private System.Windows.Forms.PictureBox imgBan2;
         private System.Windows.Forms.PictureBox imgBan1;
         private System.Windows.Forms.PictureBox imgWinDefeat;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblGameMode;
         private System.Windows.Forms.Label lblMap;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblGameDuration;
         private System.Windows.Forms.Label lblDuration;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox dropdownGame;
+        private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnNextGame;
     }
 }
