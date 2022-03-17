@@ -39,8 +39,8 @@
             this.imgRedChamp3 = new System.Windows.Forms.PictureBox();
             this.imgRedChamp2 = new System.Windows.Forms.PictureBox();
             this.imgRedChamp1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.imgitem3B5 = new System.Windows.Forms.PictureBox();
+            this.imgitem1B5 = new System.Windows.Forms.PictureBox();
             this.lblRedMember5 = new System.Windows.Forms.Label();
             this.lblRedMember4 = new System.Windows.Forms.Label();
             this.lblRedMember3 = new System.Windows.Forms.Label();
@@ -51,64 +51,64 @@
             this.lblBlueMember3 = new System.Windows.Forms.Label();
             this.lblBlueMember2 = new System.Windows.Forms.Label();
             this.lblBlueMember1 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
-            this.pictureBox42 = new System.Windows.Forms.PictureBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
-            this.pictureBox44 = new System.Windows.Forms.PictureBox();
-            this.pictureBox45 = new System.Windows.Forms.PictureBox();
-            this.pictureBox46 = new System.Windows.Forms.PictureBox();
-            this.pictureBox47 = new System.Windows.Forms.PictureBox();
-            this.pictureBox48 = new System.Windows.Forms.PictureBox();
-            this.pictureBox49 = new System.Windows.Forms.PictureBox();
-            this.pictureBox50 = new System.Windows.Forms.PictureBox();
-            this.pictureBox51 = new System.Windows.Forms.PictureBox();
-            this.pictureBox52 = new System.Windows.Forms.PictureBox();
-            this.pictureBox53 = new System.Windows.Forms.PictureBox();
-            this.pictureBox54 = new System.Windows.Forms.PictureBox();
-            this.pictureBox55 = new System.Windows.Forms.PictureBox();
-            this.pictureBox56 = new System.Windows.Forms.PictureBox();
-            this.pictureBox57 = new System.Windows.Forms.PictureBox();
-            this.pictureBox58 = new System.Windows.Forms.PictureBox();
-            this.pictureBox59 = new System.Windows.Forms.PictureBox();
-            this.pictureBox60 = new System.Windows.Forms.PictureBox();
-            this.pictureBox61 = new System.Windows.Forms.PictureBox();
-            this.pictureBox62 = new System.Windows.Forms.PictureBox();
-            this.pictureBox63 = new System.Windows.Forms.PictureBox();
-            this.pictureBox64 = new System.Windows.Forms.PictureBox();
-            this.pictureBox65 = new System.Windows.Forms.PictureBox();
-            this.pictureBox66 = new System.Windows.Forms.PictureBox();
-            this.pictureBox67 = new System.Windows.Forms.PictureBox();
-            this.pictureBox68 = new System.Windows.Forms.PictureBox();
-            this.pictureBox69 = new System.Windows.Forms.PictureBox();
+            this.imgitem2B5 = new System.Windows.Forms.PictureBox();
+            this.imgitem4B5 = new System.Windows.Forms.PictureBox();
+            this.imgitem5B5 = new System.Windows.Forms.PictureBox();
+            this.imgitem6B5 = new System.Windows.Forms.PictureBox();
+            this.imgitem6B4 = new System.Windows.Forms.PictureBox();
+            this.imgitem5B4 = new System.Windows.Forms.PictureBox();
+            this.imgitem4B4 = new System.Windows.Forms.PictureBox();
+            this.imgitem2B4 = new System.Windows.Forms.PictureBox();
+            this.imgitem3B4 = new System.Windows.Forms.PictureBox();
+            this.imgitem1B4 = new System.Windows.Forms.PictureBox();
+            this.imgitem6B3 = new System.Windows.Forms.PictureBox();
+            this.imgitem5B3 = new System.Windows.Forms.PictureBox();
+            this.imgitem4B3 = new System.Windows.Forms.PictureBox();
+            this.imgitem2B3 = new System.Windows.Forms.PictureBox();
+            this.imgitem3B3 = new System.Windows.Forms.PictureBox();
+            this.imgitem1B3 = new System.Windows.Forms.PictureBox();
+            this.imgitem6B2 = new System.Windows.Forms.PictureBox();
+            this.imgitem5B2 = new System.Windows.Forms.PictureBox();
+            this.imgitem4B2 = new System.Windows.Forms.PictureBox();
+            this.imgitem2B2 = new System.Windows.Forms.PictureBox();
+            this.imgitem3B2 = new System.Windows.Forms.PictureBox();
+            this.imgitem1B2 = new System.Windows.Forms.PictureBox();
+            this.imgitem6B1 = new System.Windows.Forms.PictureBox();
+            this.imgitem5B1 = new System.Windows.Forms.PictureBox();
+            this.imgitem4B1 = new System.Windows.Forms.PictureBox();
+            this.imgitem2B1 = new System.Windows.Forms.PictureBox();
+            this.imgitem3B1 = new System.Windows.Forms.PictureBox();
+            this.imgitem1B1 = new System.Windows.Forms.PictureBox();
+            this.imgitem1R1 = new System.Windows.Forms.PictureBox();
+            this.imgitem2R1 = new System.Windows.Forms.PictureBox();
+            this.imgitem3R1 = new System.Windows.Forms.PictureBox();
+            this.imgitem5R1 = new System.Windows.Forms.PictureBox();
+            this.imgitem4R1 = new System.Windows.Forms.PictureBox();
+            this.imgitem6R1 = new System.Windows.Forms.PictureBox();
+            this.imgitem1R3 = new System.Windows.Forms.PictureBox();
+            this.imgitem2R3 = new System.Windows.Forms.PictureBox();
+            this.imgitem3R3 = new System.Windows.Forms.PictureBox();
+            this.imgitem5R3 = new System.Windows.Forms.PictureBox();
+            this.imgitem4R3 = new System.Windows.Forms.PictureBox();
+            this.imgitem6R3 = new System.Windows.Forms.PictureBox();
+            this.imgitem1R4 = new System.Windows.Forms.PictureBox();
+            this.imgitem2R4 = new System.Windows.Forms.PictureBox();
+            this.imgitem3R4 = new System.Windows.Forms.PictureBox();
+            this.imgitem5R4 = new System.Windows.Forms.PictureBox();
+            this.imgitem4R4 = new System.Windows.Forms.PictureBox();
+            this.imgitem6R4 = new System.Windows.Forms.PictureBox();
+            this.imgitem1R5 = new System.Windows.Forms.PictureBox();
+            this.imgitem2R5 = new System.Windows.Forms.PictureBox();
+            this.imgitem3R5 = new System.Windows.Forms.PictureBox();
+            this.imgitem5R5 = new System.Windows.Forms.PictureBox();
+            this.imgitem4R5 = new System.Windows.Forms.PictureBox();
+            this.imgitem6R5 = new System.Windows.Forms.PictureBox();
+            this.imgitem1R2 = new System.Windows.Forms.PictureBox();
+            this.imgitem2R2 = new System.Windows.Forms.PictureBox();
+            this.imgitem3R2 = new System.Windows.Forms.PictureBox();
+            this.imgitem5R2 = new System.Windows.Forms.PictureBox();
+            this.imgitem4R2 = new System.Windows.Forms.PictureBox();
+            this.imgitem6R2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgBlueChamp1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBlueChamp2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBlueChamp3)).BeginInit();
@@ -119,66 +119,66 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgRedChamp3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgRedChamp2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgRedChamp1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R2)).BeginInit();
             this.SuspendLayout();
             // 
             // imgBlueChamp1
@@ -301,29 +301,31 @@
             this.imgRedChamp1.TabIndex = 9;
             this.imgRedChamp1.TabStop = false;
             // 
-            // pictureBox11
+            // imgitem3B5
             // 
-            this.pictureBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3B5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox11.Location = new System.Drawing.Point(274, 472);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 63;
-            this.pictureBox11.TabStop = false;
+            this.imgitem3B5.BackColor = System.Drawing.Color.Black;
+            this.imgitem3B5.Location = new System.Drawing.Point(274, 472);
+            this.imgitem3B5.Name = "imgitem3B5";
+            this.imgitem3B5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3B5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3B5.TabIndex = 63;
+            this.imgitem3B5.TabStop = false;
             // 
-            // pictureBox10
+            // imgitem1B5
             // 
-            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1B5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox10.Location = new System.Drawing.Point(204, 472);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 62;
-            this.pictureBox10.TabStop = false;
+            this.imgitem1B5.BackColor = System.Drawing.Color.Black;
+            this.imgitem1B5.Location = new System.Drawing.Point(204, 472);
+            this.imgitem1B5.Name = "imgitem1B5";
+            this.imgitem1B5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1B5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1B5.TabIndex = 62;
+            this.imgitem1B5.TabStop = false;
             // 
             // lblRedMember5
             // 
@@ -455,701 +457,759 @@
             this.lblBlueMember1.TabIndex = 52;
             this.lblBlueMember1.Text = "Summoner";
             // 
-            // pictureBox12
+            // imgitem2B5
             // 
-            this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2B5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox12.Location = new System.Drawing.Point(239, 472);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 64;
-            this.pictureBox12.TabStop = false;
+            this.imgitem2B5.BackColor = System.Drawing.Color.Black;
+            this.imgitem2B5.Location = new System.Drawing.Point(239, 472);
+            this.imgitem2B5.Name = "imgitem2B5";
+            this.imgitem2B5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2B5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2B5.TabIndex = 64;
+            this.imgitem2B5.TabStop = false;
             // 
-            // pictureBox13
+            // imgitem4B5
             // 
-            this.pictureBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4B5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox13.Location = new System.Drawing.Point(309, 472);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 65;
-            this.pictureBox13.TabStop = false;
+            this.imgitem4B5.BackColor = System.Drawing.Color.Black;
+            this.imgitem4B5.Location = new System.Drawing.Point(309, 472);
+            this.imgitem4B5.Name = "imgitem4B5";
+            this.imgitem4B5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4B5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4B5.TabIndex = 65;
+            this.imgitem4B5.TabStop = false;
             // 
-            // pictureBox14
+            // imgitem5B5
             // 
-            this.pictureBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5B5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox14.Location = new System.Drawing.Point(344, 472);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 66;
-            this.pictureBox14.TabStop = false;
+            this.imgitem5B5.BackColor = System.Drawing.Color.Black;
+            this.imgitem5B5.Location = new System.Drawing.Point(344, 472);
+            this.imgitem5B5.Name = "imgitem5B5";
+            this.imgitem5B5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5B5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5B5.TabIndex = 66;
+            this.imgitem5B5.TabStop = false;
             // 
-            // pictureBox15
+            // imgitem6B5
             // 
-            this.pictureBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6B5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox15.Location = new System.Drawing.Point(379, 472);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 67;
-            this.pictureBox15.TabStop = false;
+            this.imgitem6B5.BackColor = System.Drawing.Color.Black;
+            this.imgitem6B5.Location = new System.Drawing.Point(379, 472);
+            this.imgitem6B5.Name = "imgitem6B5";
+            this.imgitem6B5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6B5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6B5.TabIndex = 67;
+            this.imgitem6B5.TabStop = false;
             // 
-            // pictureBox16
+            // imgitem6B4
             // 
-            this.pictureBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6B4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox16.Location = new System.Drawing.Point(379, 399);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 73;
-            this.pictureBox16.TabStop = false;
+            this.imgitem6B4.BackColor = System.Drawing.Color.Black;
+            this.imgitem6B4.Location = new System.Drawing.Point(379, 399);
+            this.imgitem6B4.Name = "imgitem6B4";
+            this.imgitem6B4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6B4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6B4.TabIndex = 73;
+            this.imgitem6B4.TabStop = false;
             // 
-            // pictureBox17
+            // imgitem5B4
             // 
-            this.pictureBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5B4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox17.Location = new System.Drawing.Point(344, 399);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 72;
-            this.pictureBox17.TabStop = false;
+            this.imgitem5B4.BackColor = System.Drawing.Color.Black;
+            this.imgitem5B4.Location = new System.Drawing.Point(344, 399);
+            this.imgitem5B4.Name = "imgitem5B4";
+            this.imgitem5B4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5B4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5B4.TabIndex = 72;
+            this.imgitem5B4.TabStop = false;
             // 
-            // pictureBox18
+            // imgitem4B4
             // 
-            this.pictureBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4B4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox18.Location = new System.Drawing.Point(309, 399);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 71;
-            this.pictureBox18.TabStop = false;
+            this.imgitem4B4.BackColor = System.Drawing.Color.Black;
+            this.imgitem4B4.Location = new System.Drawing.Point(309, 399);
+            this.imgitem4B4.Name = "imgitem4B4";
+            this.imgitem4B4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4B4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4B4.TabIndex = 71;
+            this.imgitem4B4.TabStop = false;
             // 
-            // pictureBox19
+            // imgitem2B4
             // 
-            this.pictureBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2B4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox19.Location = new System.Drawing.Point(239, 399);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 70;
-            this.pictureBox19.TabStop = false;
+            this.imgitem2B4.BackColor = System.Drawing.Color.Black;
+            this.imgitem2B4.Location = new System.Drawing.Point(239, 399);
+            this.imgitem2B4.Name = "imgitem2B4";
+            this.imgitem2B4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2B4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2B4.TabIndex = 70;
+            this.imgitem2B4.TabStop = false;
             // 
-            // pictureBox20
+            // imgitem3B4
             // 
-            this.pictureBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3B4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox20.Location = new System.Drawing.Point(274, 399);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 69;
-            this.pictureBox20.TabStop = false;
+            this.imgitem3B4.BackColor = System.Drawing.Color.Black;
+            this.imgitem3B4.Location = new System.Drawing.Point(274, 399);
+            this.imgitem3B4.Name = "imgitem3B4";
+            this.imgitem3B4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3B4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3B4.TabIndex = 69;
+            this.imgitem3B4.TabStop = false;
             // 
-            // pictureBox21
+            // imgitem1B4
             // 
-            this.pictureBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1B4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox21.Location = new System.Drawing.Point(204, 399);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 68;
-            this.pictureBox21.TabStop = false;
+            this.imgitem1B4.BackColor = System.Drawing.Color.Black;
+            this.imgitem1B4.Location = new System.Drawing.Point(204, 399);
+            this.imgitem1B4.Name = "imgitem1B4";
+            this.imgitem1B4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1B4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1B4.TabIndex = 68;
+            this.imgitem1B4.TabStop = false;
             // 
-            // pictureBox22
+            // imgitem6B3
             // 
-            this.pictureBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6B3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox22.Location = new System.Drawing.Point(379, 326);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 79;
-            this.pictureBox22.TabStop = false;
+            this.imgitem6B3.BackColor = System.Drawing.Color.Black;
+            this.imgitem6B3.Location = new System.Drawing.Point(379, 326);
+            this.imgitem6B3.Name = "imgitem6B3";
+            this.imgitem6B3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6B3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6B3.TabIndex = 79;
+            this.imgitem6B3.TabStop = false;
             // 
-            // pictureBox23
+            // imgitem5B3
             // 
-            this.pictureBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5B3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox23.Location = new System.Drawing.Point(344, 326);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox23.TabIndex = 78;
-            this.pictureBox23.TabStop = false;
+            this.imgitem5B3.BackColor = System.Drawing.Color.Black;
+            this.imgitem5B3.Location = new System.Drawing.Point(344, 326);
+            this.imgitem5B3.Name = "imgitem5B3";
+            this.imgitem5B3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5B3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5B3.TabIndex = 78;
+            this.imgitem5B3.TabStop = false;
             // 
-            // pictureBox24
+            // imgitem4B3
             // 
-            this.pictureBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4B3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox24.Location = new System.Drawing.Point(309, 326);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox24.TabIndex = 77;
-            this.pictureBox24.TabStop = false;
+            this.imgitem4B3.BackColor = System.Drawing.Color.Black;
+            this.imgitem4B3.Location = new System.Drawing.Point(309, 326);
+            this.imgitem4B3.Name = "imgitem4B3";
+            this.imgitem4B3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4B3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4B3.TabIndex = 77;
+            this.imgitem4B3.TabStop = false;
             // 
-            // pictureBox25
+            // imgitem2B3
             // 
-            this.pictureBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2B3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox25.Location = new System.Drawing.Point(239, 326);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox25.TabIndex = 76;
-            this.pictureBox25.TabStop = false;
+            this.imgitem2B3.BackColor = System.Drawing.Color.Black;
+            this.imgitem2B3.Location = new System.Drawing.Point(239, 326);
+            this.imgitem2B3.Name = "imgitem2B3";
+            this.imgitem2B3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2B3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2B3.TabIndex = 76;
+            this.imgitem2B3.TabStop = false;
             // 
-            // pictureBox26
+            // imgitem3B3
             // 
-            this.pictureBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3B3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox26.Location = new System.Drawing.Point(274, 326);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox26.TabIndex = 75;
-            this.pictureBox26.TabStop = false;
+            this.imgitem3B3.BackColor = System.Drawing.Color.Black;
+            this.imgitem3B3.Location = new System.Drawing.Point(274, 326);
+            this.imgitem3B3.Name = "imgitem3B3";
+            this.imgitem3B3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3B3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3B3.TabIndex = 75;
+            this.imgitem3B3.TabStop = false;
             // 
-            // pictureBox27
+            // imgitem1B3
             // 
-            this.pictureBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1B3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox27.Location = new System.Drawing.Point(204, 326);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox27.TabIndex = 74;
-            this.pictureBox27.TabStop = false;
+            this.imgitem1B3.BackColor = System.Drawing.Color.Black;
+            this.imgitem1B3.Location = new System.Drawing.Point(204, 326);
+            this.imgitem1B3.Name = "imgitem1B3";
+            this.imgitem1B3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1B3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1B3.TabIndex = 74;
+            this.imgitem1B3.TabStop = false;
             // 
-            // pictureBox28
+            // imgitem6B2
             // 
-            this.pictureBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6B2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox28.Location = new System.Drawing.Point(379, 253);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox28.TabIndex = 85;
-            this.pictureBox28.TabStop = false;
+            this.imgitem6B2.BackColor = System.Drawing.Color.Black;
+            this.imgitem6B2.Location = new System.Drawing.Point(379, 253);
+            this.imgitem6B2.Name = "imgitem6B2";
+            this.imgitem6B2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6B2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6B2.TabIndex = 85;
+            this.imgitem6B2.TabStop = false;
             // 
-            // pictureBox29
+            // imgitem5B2
             // 
-            this.pictureBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5B2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox29.Location = new System.Drawing.Point(344, 253);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox29.TabIndex = 84;
-            this.pictureBox29.TabStop = false;
+            this.imgitem5B2.BackColor = System.Drawing.Color.Black;
+            this.imgitem5B2.Location = new System.Drawing.Point(344, 253);
+            this.imgitem5B2.Name = "imgitem5B2";
+            this.imgitem5B2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5B2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5B2.TabIndex = 84;
+            this.imgitem5B2.TabStop = false;
             // 
-            // pictureBox30
+            // imgitem4B2
             // 
-            this.pictureBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4B2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox30.Location = new System.Drawing.Point(309, 253);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 83;
-            this.pictureBox30.TabStop = false;
+            this.imgitem4B2.BackColor = System.Drawing.Color.Black;
+            this.imgitem4B2.Location = new System.Drawing.Point(309, 253);
+            this.imgitem4B2.Name = "imgitem4B2";
+            this.imgitem4B2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4B2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4B2.TabIndex = 83;
+            this.imgitem4B2.TabStop = false;
             // 
-            // pictureBox31
+            // imgitem2B2
             // 
-            this.pictureBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2B2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox31.Location = new System.Drawing.Point(239, 253);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox31.TabIndex = 82;
-            this.pictureBox31.TabStop = false;
+            this.imgitem2B2.BackColor = System.Drawing.Color.Black;
+            this.imgitem2B2.Location = new System.Drawing.Point(239, 253);
+            this.imgitem2B2.Name = "imgitem2B2";
+            this.imgitem2B2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2B2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2B2.TabIndex = 82;
+            this.imgitem2B2.TabStop = false;
             // 
-            // pictureBox32
+            // imgitem3B2
             // 
-            this.pictureBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3B2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox32.Location = new System.Drawing.Point(274, 253);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox32.TabIndex = 81;
-            this.pictureBox32.TabStop = false;
+            this.imgitem3B2.BackColor = System.Drawing.Color.Black;
+            this.imgitem3B2.Location = new System.Drawing.Point(274, 253);
+            this.imgitem3B2.Name = "imgitem3B2";
+            this.imgitem3B2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3B2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3B2.TabIndex = 81;
+            this.imgitem3B2.TabStop = false;
             // 
-            // pictureBox33
+            // imgitem1B2
             // 
-            this.pictureBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1B2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox33.Location = new System.Drawing.Point(204, 253);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox33.TabIndex = 80;
-            this.pictureBox33.TabStop = false;
+            this.imgitem1B2.BackColor = System.Drawing.Color.Black;
+            this.imgitem1B2.Location = new System.Drawing.Point(204, 253);
+            this.imgitem1B2.Name = "imgitem1B2";
+            this.imgitem1B2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1B2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1B2.TabIndex = 80;
+            this.imgitem1B2.TabStop = false;
             // 
-            // pictureBox34
+            // imgitem6B1
             // 
-            this.pictureBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6B1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox34.Location = new System.Drawing.Point(379, 180);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox34.TabIndex = 91;
-            this.pictureBox34.TabStop = false;
+            this.imgitem6B1.BackColor = System.Drawing.Color.Black;
+            this.imgitem6B1.Location = new System.Drawing.Point(379, 180);
+            this.imgitem6B1.Name = "imgitem6B1";
+            this.imgitem6B1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6B1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6B1.TabIndex = 91;
+            this.imgitem6B1.TabStop = false;
             // 
-            // pictureBox35
+            // imgitem5B1
             // 
-            this.pictureBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5B1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox35.Location = new System.Drawing.Point(344, 180);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox35.TabIndex = 90;
-            this.pictureBox35.TabStop = false;
+            this.imgitem5B1.BackColor = System.Drawing.Color.Black;
+            this.imgitem5B1.Location = new System.Drawing.Point(344, 180);
+            this.imgitem5B1.Name = "imgitem5B1";
+            this.imgitem5B1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5B1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5B1.TabIndex = 90;
+            this.imgitem5B1.TabStop = false;
             // 
-            // pictureBox36
+            // imgitem4B1
             // 
-            this.pictureBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4B1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox36.Location = new System.Drawing.Point(309, 180);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox36.TabIndex = 89;
-            this.pictureBox36.TabStop = false;
+            this.imgitem4B1.BackColor = System.Drawing.Color.Black;
+            this.imgitem4B1.Location = new System.Drawing.Point(309, 180);
+            this.imgitem4B1.Name = "imgitem4B1";
+            this.imgitem4B1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4B1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4B1.TabIndex = 89;
+            this.imgitem4B1.TabStop = false;
             // 
-            // pictureBox37
+            // imgitem2B1
             // 
-            this.pictureBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2B1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox37.Location = new System.Drawing.Point(239, 180);
-            this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox37.TabIndex = 88;
-            this.pictureBox37.TabStop = false;
+            this.imgitem2B1.BackColor = System.Drawing.Color.Black;
+            this.imgitem2B1.Location = new System.Drawing.Point(239, 180);
+            this.imgitem2B1.Name = "imgitem2B1";
+            this.imgitem2B1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2B1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2B1.TabIndex = 88;
+            this.imgitem2B1.TabStop = false;
             // 
-            // pictureBox38
+            // imgitem3B1
             // 
-            this.pictureBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3B1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox38.Location = new System.Drawing.Point(274, 180);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox38.TabIndex = 87;
-            this.pictureBox38.TabStop = false;
+            this.imgitem3B1.BackColor = System.Drawing.Color.Black;
+            this.imgitem3B1.Location = new System.Drawing.Point(274, 180);
+            this.imgitem3B1.Name = "imgitem3B1";
+            this.imgitem3B1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3B1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3B1.TabIndex = 87;
+            this.imgitem3B1.TabStop = false;
             // 
-            // pictureBox39
+            // imgitem1B1
             // 
-            this.pictureBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1B1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox39.Location = new System.Drawing.Point(204, 180);
-            this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox39.TabIndex = 86;
-            this.pictureBox39.TabStop = false;
+            this.imgitem1B1.BackColor = System.Drawing.Color.Black;
+            this.imgitem1B1.Location = new System.Drawing.Point(204, 180);
+            this.imgitem1B1.Name = "imgitem1B1";
+            this.imgitem1B1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1B1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1B1.TabIndex = 86;
+            this.imgitem1B1.TabStop = false;
             // 
-            // pictureBox40
+            // imgitem1R1
             // 
-            this.pictureBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1R1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox40.Location = new System.Drawing.Point(779, 180);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox40.TabIndex = 97;
-            this.pictureBox40.TabStop = false;
+            this.imgitem1R1.BackColor = System.Drawing.Color.Black;
+            this.imgitem1R1.Location = new System.Drawing.Point(779, 180);
+            this.imgitem1R1.Name = "imgitem1R1";
+            this.imgitem1R1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1R1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1R1.TabIndex = 97;
+            this.imgitem1R1.TabStop = false;
             // 
-            // pictureBox41
+            // imgitem2R1
             // 
-            this.pictureBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2R1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox41.Location = new System.Drawing.Point(744, 180);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox41.TabIndex = 96;
-            this.pictureBox41.TabStop = false;
+            this.imgitem2R1.BackColor = System.Drawing.Color.Black;
+            this.imgitem2R1.Location = new System.Drawing.Point(744, 180);
+            this.imgitem2R1.Name = "imgitem2R1";
+            this.imgitem2R1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2R1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2R1.TabIndex = 96;
+            this.imgitem2R1.TabStop = false;
             // 
-            // pictureBox42
+            // imgitem3R1
             // 
-            this.pictureBox42.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3R1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox42.Location = new System.Drawing.Point(709, 180);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox42.TabIndex = 95;
-            this.pictureBox42.TabStop = false;
+            this.imgitem3R1.BackColor = System.Drawing.Color.Black;
+            this.imgitem3R1.Location = new System.Drawing.Point(709, 180);
+            this.imgitem3R1.Name = "imgitem3R1";
+            this.imgitem3R1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3R1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3R1.TabIndex = 95;
+            this.imgitem3R1.TabStop = false;
             // 
-            // pictureBox43
+            // imgitem5R1
             // 
-            this.pictureBox43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5R1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox43.Location = new System.Drawing.Point(639, 180);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox43.TabIndex = 94;
-            this.pictureBox43.TabStop = false;
+            this.imgitem5R1.BackColor = System.Drawing.Color.Black;
+            this.imgitem5R1.Location = new System.Drawing.Point(639, 180);
+            this.imgitem5R1.Name = "imgitem5R1";
+            this.imgitem5R1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5R1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5R1.TabIndex = 94;
+            this.imgitem5R1.TabStop = false;
             // 
-            // pictureBox44
+            // imgitem4R1
             // 
-            this.pictureBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4R1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox44.Location = new System.Drawing.Point(674, 180);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox44.TabIndex = 93;
-            this.pictureBox44.TabStop = false;
+            this.imgitem4R1.BackColor = System.Drawing.Color.Black;
+            this.imgitem4R1.Location = new System.Drawing.Point(674, 180);
+            this.imgitem4R1.Name = "imgitem4R1";
+            this.imgitem4R1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4R1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4R1.TabIndex = 93;
+            this.imgitem4R1.TabStop = false;
             // 
-            // pictureBox45
+            // imgitem6R1
             // 
-            this.pictureBox45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6R1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox45.Location = new System.Drawing.Point(604, 180);
-            this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox45.TabIndex = 92;
-            this.pictureBox45.TabStop = false;
+            this.imgitem6R1.BackColor = System.Drawing.Color.Black;
+            this.imgitem6R1.Location = new System.Drawing.Point(604, 180);
+            this.imgitem6R1.Name = "imgitem6R1";
+            this.imgitem6R1.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6R1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6R1.TabIndex = 92;
+            this.imgitem6R1.TabStop = false;
             // 
-            // pictureBox46
+            // imgitem1R3
             // 
-            this.pictureBox46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1R3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox46.Location = new System.Drawing.Point(779, 326);
-            this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox46.TabIndex = 103;
-            this.pictureBox46.TabStop = false;
+            this.imgitem1R3.BackColor = System.Drawing.Color.Black;
+            this.imgitem1R3.Location = new System.Drawing.Point(779, 326);
+            this.imgitem1R3.Name = "imgitem1R3";
+            this.imgitem1R3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1R3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1R3.TabIndex = 103;
+            this.imgitem1R3.TabStop = false;
             // 
-            // pictureBox47
+            // imgitem2R3
             // 
-            this.pictureBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2R3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox47.Location = new System.Drawing.Point(744, 326);
-            this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox47.TabIndex = 102;
-            this.pictureBox47.TabStop = false;
+            this.imgitem2R3.BackColor = System.Drawing.Color.Black;
+            this.imgitem2R3.Location = new System.Drawing.Point(744, 326);
+            this.imgitem2R3.Name = "imgitem2R3";
+            this.imgitem2R3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2R3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2R3.TabIndex = 102;
+            this.imgitem2R3.TabStop = false;
             // 
-            // pictureBox48
+            // imgitem3R3
             // 
-            this.pictureBox48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3R3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox48.Location = new System.Drawing.Point(709, 326);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox48.TabIndex = 101;
-            this.pictureBox48.TabStop = false;
+            this.imgitem3R3.BackColor = System.Drawing.Color.Black;
+            this.imgitem3R3.Location = new System.Drawing.Point(709, 326);
+            this.imgitem3R3.Name = "imgitem3R3";
+            this.imgitem3R3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3R3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3R3.TabIndex = 101;
+            this.imgitem3R3.TabStop = false;
             // 
-            // pictureBox49
+            // imgitem5R3
             // 
-            this.pictureBox49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5R3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox49.Location = new System.Drawing.Point(639, 326);
-            this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox49.TabIndex = 100;
-            this.pictureBox49.TabStop = false;
+            this.imgitem5R3.BackColor = System.Drawing.Color.Black;
+            this.imgitem5R3.Location = new System.Drawing.Point(639, 326);
+            this.imgitem5R3.Name = "imgitem5R3";
+            this.imgitem5R3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5R3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5R3.TabIndex = 100;
+            this.imgitem5R3.TabStop = false;
             // 
-            // pictureBox50
+            // imgitem4R3
             // 
-            this.pictureBox50.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4R3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox50.Location = new System.Drawing.Point(674, 326);
-            this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox50.TabIndex = 99;
-            this.pictureBox50.TabStop = false;
+            this.imgitem4R3.BackColor = System.Drawing.Color.Black;
+            this.imgitem4R3.Location = new System.Drawing.Point(674, 326);
+            this.imgitem4R3.Name = "imgitem4R3";
+            this.imgitem4R3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4R3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4R3.TabIndex = 99;
+            this.imgitem4R3.TabStop = false;
             // 
-            // pictureBox51
+            // imgitem6R3
             // 
-            this.pictureBox51.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6R3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox51.Location = new System.Drawing.Point(604, 326);
-            this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox51.TabIndex = 98;
-            this.pictureBox51.TabStop = false;
+            this.imgitem6R3.BackColor = System.Drawing.Color.Black;
+            this.imgitem6R3.Location = new System.Drawing.Point(604, 326);
+            this.imgitem6R3.Name = "imgitem6R3";
+            this.imgitem6R3.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6R3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6R3.TabIndex = 98;
+            this.imgitem6R3.TabStop = false;
             // 
-            // pictureBox52
+            // imgitem1R4
             // 
-            this.pictureBox52.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1R4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox52.Location = new System.Drawing.Point(779, 399);
-            this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox52.TabIndex = 109;
-            this.pictureBox52.TabStop = false;
+            this.imgitem1R4.BackColor = System.Drawing.Color.Black;
+            this.imgitem1R4.Location = new System.Drawing.Point(779, 399);
+            this.imgitem1R4.Name = "imgitem1R4";
+            this.imgitem1R4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1R4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1R4.TabIndex = 109;
+            this.imgitem1R4.TabStop = false;
             // 
-            // pictureBox53
+            // imgitem2R4
             // 
-            this.pictureBox53.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2R4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox53.Location = new System.Drawing.Point(744, 399);
-            this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox53.TabIndex = 108;
-            this.pictureBox53.TabStop = false;
+            this.imgitem2R4.BackColor = System.Drawing.Color.Black;
+            this.imgitem2R4.Location = new System.Drawing.Point(744, 399);
+            this.imgitem2R4.Name = "imgitem2R4";
+            this.imgitem2R4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2R4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2R4.TabIndex = 108;
+            this.imgitem2R4.TabStop = false;
             // 
-            // pictureBox54
+            // imgitem3R4
             // 
-            this.pictureBox54.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3R4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox54.Location = new System.Drawing.Point(709, 399);
-            this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox54.TabIndex = 107;
-            this.pictureBox54.TabStop = false;
+            this.imgitem3R4.BackColor = System.Drawing.Color.Black;
+            this.imgitem3R4.Location = new System.Drawing.Point(709, 399);
+            this.imgitem3R4.Name = "imgitem3R4";
+            this.imgitem3R4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3R4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3R4.TabIndex = 107;
+            this.imgitem3R4.TabStop = false;
             // 
-            // pictureBox55
+            // imgitem5R4
             // 
-            this.pictureBox55.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5R4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox55.Location = new System.Drawing.Point(639, 399);
-            this.pictureBox55.Name = "pictureBox55";
-            this.pictureBox55.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox55.TabIndex = 106;
-            this.pictureBox55.TabStop = false;
+            this.imgitem5R4.BackColor = System.Drawing.Color.Black;
+            this.imgitem5R4.Location = new System.Drawing.Point(639, 399);
+            this.imgitem5R4.Name = "imgitem5R4";
+            this.imgitem5R4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5R4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5R4.TabIndex = 106;
+            this.imgitem5R4.TabStop = false;
             // 
-            // pictureBox56
+            // imgitem4R4
             // 
-            this.pictureBox56.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4R4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox56.Location = new System.Drawing.Point(674, 399);
-            this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox56.TabIndex = 105;
-            this.pictureBox56.TabStop = false;
+            this.imgitem4R4.BackColor = System.Drawing.Color.Black;
+            this.imgitem4R4.Location = new System.Drawing.Point(673, 399);
+            this.imgitem4R4.Name = "imgitem4R4";
+            this.imgitem4R4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4R4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4R4.TabIndex = 105;
+            this.imgitem4R4.TabStop = false;
             // 
-            // pictureBox57
+            // imgitem6R4
             // 
-            this.pictureBox57.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6R4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox57.Location = new System.Drawing.Point(604, 399);
-            this.pictureBox57.Name = "pictureBox57";
-            this.pictureBox57.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox57.TabIndex = 104;
-            this.pictureBox57.TabStop = false;
+            this.imgitem6R4.BackColor = System.Drawing.Color.Black;
+            this.imgitem6R4.Location = new System.Drawing.Point(604, 399);
+            this.imgitem6R4.Name = "imgitem6R4";
+            this.imgitem6R4.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6R4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6R4.TabIndex = 104;
+            this.imgitem6R4.TabStop = false;
             // 
-            // pictureBox58
+            // imgitem1R5
             // 
-            this.pictureBox58.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1R5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox58.Location = new System.Drawing.Point(779, 472);
-            this.pictureBox58.Name = "pictureBox58";
-            this.pictureBox58.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox58.TabIndex = 115;
-            this.pictureBox58.TabStop = false;
+            this.imgitem1R5.BackColor = System.Drawing.Color.Black;
+            this.imgitem1R5.Location = new System.Drawing.Point(779, 472);
+            this.imgitem1R5.Name = "imgitem1R5";
+            this.imgitem1R5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1R5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1R5.TabIndex = 115;
+            this.imgitem1R5.TabStop = false;
             // 
-            // pictureBox59
+            // imgitem2R5
             // 
-            this.pictureBox59.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2R5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox59.Location = new System.Drawing.Point(744, 472);
-            this.pictureBox59.Name = "pictureBox59";
-            this.pictureBox59.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox59.TabIndex = 114;
-            this.pictureBox59.TabStop = false;
+            this.imgitem2R5.BackColor = System.Drawing.Color.Black;
+            this.imgitem2R5.Location = new System.Drawing.Point(744, 472);
+            this.imgitem2R5.Name = "imgitem2R5";
+            this.imgitem2R5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2R5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2R5.TabIndex = 114;
+            this.imgitem2R5.TabStop = false;
             // 
-            // pictureBox60
+            // imgitem3R5
             // 
-            this.pictureBox60.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3R5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox60.Location = new System.Drawing.Point(709, 472);
-            this.pictureBox60.Name = "pictureBox60";
-            this.pictureBox60.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox60.TabIndex = 113;
-            this.pictureBox60.TabStop = false;
+            this.imgitem3R5.BackColor = System.Drawing.Color.Black;
+            this.imgitem3R5.Location = new System.Drawing.Point(709, 472);
+            this.imgitem3R5.Name = "imgitem3R5";
+            this.imgitem3R5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3R5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3R5.TabIndex = 113;
+            this.imgitem3R5.TabStop = false;
             // 
-            // pictureBox61
+            // imgitem5R5
             // 
-            this.pictureBox61.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5R5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox61.Location = new System.Drawing.Point(639, 472);
-            this.pictureBox61.Name = "pictureBox61";
-            this.pictureBox61.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox61.TabIndex = 112;
-            this.pictureBox61.TabStop = false;
+            this.imgitem5R5.BackColor = System.Drawing.Color.Black;
+            this.imgitem5R5.Location = new System.Drawing.Point(639, 472);
+            this.imgitem5R5.Name = "imgitem5R5";
+            this.imgitem5R5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5R5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5R5.TabIndex = 112;
+            this.imgitem5R5.TabStop = false;
             // 
-            // pictureBox62
+            // imgitem4R5
             // 
-            this.pictureBox62.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4R5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox62.Location = new System.Drawing.Point(674, 472);
-            this.pictureBox62.Name = "pictureBox62";
-            this.pictureBox62.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox62.TabIndex = 111;
-            this.pictureBox62.TabStop = false;
+            this.imgitem4R5.BackColor = System.Drawing.Color.Black;
+            this.imgitem4R5.Location = new System.Drawing.Point(674, 472);
+            this.imgitem4R5.Name = "imgitem4R5";
+            this.imgitem4R5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4R5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4R5.TabIndex = 111;
+            this.imgitem4R5.TabStop = false;
             // 
-            // pictureBox63
+            // imgitem6R5
             // 
-            this.pictureBox63.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6R5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox63.Location = new System.Drawing.Point(604, 472);
-            this.pictureBox63.Name = "pictureBox63";
-            this.pictureBox63.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox63.TabIndex = 110;
-            this.pictureBox63.TabStop = false;
+            this.imgitem6R5.BackColor = System.Drawing.Color.Black;
+            this.imgitem6R5.Location = new System.Drawing.Point(604, 472);
+            this.imgitem6R5.Name = "imgitem6R5";
+            this.imgitem6R5.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6R5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6R5.TabIndex = 110;
+            this.imgitem6R5.TabStop = false;
             // 
-            // pictureBox64
+            // imgitem1R2
             // 
-            this.pictureBox64.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem1R2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox64.Location = new System.Drawing.Point(779, 253);
-            this.pictureBox64.Name = "pictureBox64";
-            this.pictureBox64.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox64.TabIndex = 121;
-            this.pictureBox64.TabStop = false;
+            this.imgitem1R2.BackColor = System.Drawing.Color.Black;
+            this.imgitem1R2.Location = new System.Drawing.Point(779, 253);
+            this.imgitem1R2.Name = "imgitem1R2";
+            this.imgitem1R2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem1R2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem1R2.TabIndex = 121;
+            this.imgitem1R2.TabStop = false;
             // 
-            // pictureBox65
+            // imgitem2R2
             // 
-            this.pictureBox65.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem2R2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox65.Location = new System.Drawing.Point(744, 253);
-            this.pictureBox65.Name = "pictureBox65";
-            this.pictureBox65.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox65.TabIndex = 120;
-            this.pictureBox65.TabStop = false;
+            this.imgitem2R2.BackColor = System.Drawing.Color.Black;
+            this.imgitem2R2.Location = new System.Drawing.Point(744, 253);
+            this.imgitem2R2.Name = "imgitem2R2";
+            this.imgitem2R2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem2R2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem2R2.TabIndex = 120;
+            this.imgitem2R2.TabStop = false;
             // 
-            // pictureBox66
+            // imgitem3R2
             // 
-            this.pictureBox66.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem3R2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox66.Location = new System.Drawing.Point(709, 253);
-            this.pictureBox66.Name = "pictureBox66";
-            this.pictureBox66.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox66.TabIndex = 119;
-            this.pictureBox66.TabStop = false;
+            this.imgitem3R2.BackColor = System.Drawing.Color.Black;
+            this.imgitem3R2.Location = new System.Drawing.Point(709, 253);
+            this.imgitem3R2.Name = "imgitem3R2";
+            this.imgitem3R2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem3R2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem3R2.TabIndex = 119;
+            this.imgitem3R2.TabStop = false;
             // 
-            // pictureBox67
+            // imgitem5R2
             // 
-            this.pictureBox67.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem5R2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox67.Location = new System.Drawing.Point(639, 253);
-            this.pictureBox67.Name = "pictureBox67";
-            this.pictureBox67.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox67.TabIndex = 118;
-            this.pictureBox67.TabStop = false;
+            this.imgitem5R2.BackColor = System.Drawing.Color.Black;
+            this.imgitem5R2.Location = new System.Drawing.Point(639, 253);
+            this.imgitem5R2.Name = "imgitem5R2";
+            this.imgitem5R2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem5R2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem5R2.TabIndex = 118;
+            this.imgitem5R2.TabStop = false;
             // 
-            // pictureBox68
+            // imgitem4R2
             // 
-            this.pictureBox68.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem4R2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox68.Location = new System.Drawing.Point(674, 253);
-            this.pictureBox68.Name = "pictureBox68";
-            this.pictureBox68.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox68.TabIndex = 117;
-            this.pictureBox68.TabStop = false;
+            this.imgitem4R2.BackColor = System.Drawing.Color.Black;
+            this.imgitem4R2.Location = new System.Drawing.Point(674, 253);
+            this.imgitem4R2.Name = "imgitem4R2";
+            this.imgitem4R2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem4R2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem4R2.TabIndex = 117;
+            this.imgitem4R2.TabStop = false;
             // 
-            // pictureBox69
+            // imgitem6R2
             // 
-            this.pictureBox69.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imgitem6R2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox69.Location = new System.Drawing.Point(604, 253);
-            this.pictureBox69.Name = "pictureBox69";
-            this.pictureBox69.Size = new System.Drawing.Size(29, 26);
-            this.pictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox69.TabIndex = 116;
-            this.pictureBox69.TabStop = false;
+            this.imgitem6R2.BackColor = System.Drawing.Color.Black;
+            this.imgitem6R2.Location = new System.Drawing.Point(604, 253);
+            this.imgitem6R2.Name = "imgitem6R2";
+            this.imgitem6R2.Size = new System.Drawing.Size(29, 26);
+            this.imgitem6R2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgitem6R2.TabIndex = 116;
+            this.imgitem6R2.TabStop = false;
             // 
             // MoreStats
             // 
@@ -1158,66 +1218,66 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1013, 699);
-            this.Controls.Add(this.pictureBox64);
-            this.Controls.Add(this.pictureBox65);
-            this.Controls.Add(this.pictureBox66);
-            this.Controls.Add(this.pictureBox67);
-            this.Controls.Add(this.pictureBox68);
-            this.Controls.Add(this.pictureBox69);
-            this.Controls.Add(this.pictureBox58);
-            this.Controls.Add(this.pictureBox59);
-            this.Controls.Add(this.pictureBox60);
-            this.Controls.Add(this.pictureBox61);
-            this.Controls.Add(this.pictureBox62);
-            this.Controls.Add(this.pictureBox63);
-            this.Controls.Add(this.pictureBox52);
-            this.Controls.Add(this.pictureBox53);
-            this.Controls.Add(this.pictureBox54);
-            this.Controls.Add(this.pictureBox55);
-            this.Controls.Add(this.pictureBox56);
-            this.Controls.Add(this.pictureBox57);
-            this.Controls.Add(this.pictureBox46);
-            this.Controls.Add(this.pictureBox47);
-            this.Controls.Add(this.pictureBox48);
-            this.Controls.Add(this.pictureBox49);
-            this.Controls.Add(this.pictureBox50);
-            this.Controls.Add(this.pictureBox51);
-            this.Controls.Add(this.pictureBox40);
-            this.Controls.Add(this.pictureBox41);
-            this.Controls.Add(this.pictureBox42);
-            this.Controls.Add(this.pictureBox43);
-            this.Controls.Add(this.pictureBox44);
-            this.Controls.Add(this.pictureBox45);
-            this.Controls.Add(this.pictureBox34);
-            this.Controls.Add(this.pictureBox35);
-            this.Controls.Add(this.pictureBox36);
-            this.Controls.Add(this.pictureBox37);
-            this.Controls.Add(this.pictureBox38);
-            this.Controls.Add(this.pictureBox39);
-            this.Controls.Add(this.pictureBox28);
-            this.Controls.Add(this.pictureBox29);
-            this.Controls.Add(this.pictureBox30);
-            this.Controls.Add(this.pictureBox31);
-            this.Controls.Add(this.pictureBox32);
-            this.Controls.Add(this.pictureBox33);
-            this.Controls.Add(this.pictureBox22);
-            this.Controls.Add(this.pictureBox23);
-            this.Controls.Add(this.pictureBox24);
-            this.Controls.Add(this.pictureBox25);
-            this.Controls.Add(this.pictureBox26);
-            this.Controls.Add(this.pictureBox27);
-            this.Controls.Add(this.pictureBox16);
-            this.Controls.Add(this.pictureBox17);
-            this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.pictureBox19);
-            this.Controls.Add(this.pictureBox20);
-            this.Controls.Add(this.pictureBox21);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.imgitem1R2);
+            this.Controls.Add(this.imgitem2R2);
+            this.Controls.Add(this.imgitem3R2);
+            this.Controls.Add(this.imgitem5R2);
+            this.Controls.Add(this.imgitem4R2);
+            this.Controls.Add(this.imgitem6R2);
+            this.Controls.Add(this.imgitem1R5);
+            this.Controls.Add(this.imgitem2R5);
+            this.Controls.Add(this.imgitem3R5);
+            this.Controls.Add(this.imgitem5R5);
+            this.Controls.Add(this.imgitem4R5);
+            this.Controls.Add(this.imgitem6R5);
+            this.Controls.Add(this.imgitem1R4);
+            this.Controls.Add(this.imgitem2R4);
+            this.Controls.Add(this.imgitem3R4);
+            this.Controls.Add(this.imgitem5R4);
+            this.Controls.Add(this.imgitem4R4);
+            this.Controls.Add(this.imgitem6R4);
+            this.Controls.Add(this.imgitem1R3);
+            this.Controls.Add(this.imgitem2R3);
+            this.Controls.Add(this.imgitem3R3);
+            this.Controls.Add(this.imgitem5R3);
+            this.Controls.Add(this.imgitem4R3);
+            this.Controls.Add(this.imgitem6R3);
+            this.Controls.Add(this.imgitem1R1);
+            this.Controls.Add(this.imgitem2R1);
+            this.Controls.Add(this.imgitem3R1);
+            this.Controls.Add(this.imgitem5R1);
+            this.Controls.Add(this.imgitem4R1);
+            this.Controls.Add(this.imgitem6R1);
+            this.Controls.Add(this.imgitem6B1);
+            this.Controls.Add(this.imgitem5B1);
+            this.Controls.Add(this.imgitem4B1);
+            this.Controls.Add(this.imgitem2B1);
+            this.Controls.Add(this.imgitem3B1);
+            this.Controls.Add(this.imgitem1B1);
+            this.Controls.Add(this.imgitem6B2);
+            this.Controls.Add(this.imgitem5B2);
+            this.Controls.Add(this.imgitem4B2);
+            this.Controls.Add(this.imgitem2B2);
+            this.Controls.Add(this.imgitem3B2);
+            this.Controls.Add(this.imgitem1B2);
+            this.Controls.Add(this.imgitem6B3);
+            this.Controls.Add(this.imgitem5B3);
+            this.Controls.Add(this.imgitem4B3);
+            this.Controls.Add(this.imgitem2B3);
+            this.Controls.Add(this.imgitem3B3);
+            this.Controls.Add(this.imgitem1B3);
+            this.Controls.Add(this.imgitem6B4);
+            this.Controls.Add(this.imgitem5B4);
+            this.Controls.Add(this.imgitem4B4);
+            this.Controls.Add(this.imgitem2B4);
+            this.Controls.Add(this.imgitem3B4);
+            this.Controls.Add(this.imgitem1B4);
+            this.Controls.Add(this.imgitem6B5);
+            this.Controls.Add(this.imgitem5B5);
+            this.Controls.Add(this.imgitem4B5);
+            this.Controls.Add(this.imgitem2B5);
+            this.Controls.Add(this.imgitem3B5);
+            this.Controls.Add(this.imgitem1B5);
             this.Controls.Add(this.lblRedMember5);
             this.Controls.Add(this.lblRedMember4);
             this.Controls.Add(this.lblRedMember3);
@@ -1252,66 +1312,66 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgRedChamp3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgRedChamp2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgRedChamp1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6B1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5B1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4B1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2B1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3B1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1B1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem1R2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem2R2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem3R2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem5R2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem4R2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgitem6R2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1329,8 +1389,8 @@
         private System.Windows.Forms.PictureBox imgRedChamp3;
         private System.Windows.Forms.PictureBox imgRedChamp2;
         private System.Windows.Forms.PictureBox imgRedChamp1;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox imgitem3B5;
+        private System.Windows.Forms.PictureBox imgitem1B5;
         private System.Windows.Forms.Label lblRedMember5;
         private System.Windows.Forms.Label lblRedMember4;
         private System.Windows.Forms.Label lblRedMember3;
@@ -1341,63 +1401,63 @@
         private System.Windows.Forms.Label lblBlueMember3;
         private System.Windows.Forms.Label lblBlueMember2;
         private System.Windows.Forms.Label lblBlueMember1;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.PictureBox pictureBox24;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.PictureBox pictureBox27;
-        private System.Windows.Forms.PictureBox pictureBox28;
-        private System.Windows.Forms.PictureBox pictureBox29;
-        private System.Windows.Forms.PictureBox pictureBox30;
-        private System.Windows.Forms.PictureBox pictureBox31;
-        private System.Windows.Forms.PictureBox pictureBox32;
-        private System.Windows.Forms.PictureBox pictureBox33;
-        private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.PictureBox pictureBox35;
-        private System.Windows.Forms.PictureBox pictureBox36;
-        private System.Windows.Forms.PictureBox pictureBox37;
-        private System.Windows.Forms.PictureBox pictureBox38;
-        private System.Windows.Forms.PictureBox pictureBox39;
-        private System.Windows.Forms.PictureBox pictureBox40;
-        private System.Windows.Forms.PictureBox pictureBox41;
-        private System.Windows.Forms.PictureBox pictureBox42;
-        private System.Windows.Forms.PictureBox pictureBox43;
-        private System.Windows.Forms.PictureBox pictureBox44;
-        private System.Windows.Forms.PictureBox pictureBox45;
-        private System.Windows.Forms.PictureBox pictureBox46;
-        private System.Windows.Forms.PictureBox pictureBox47;
-        private System.Windows.Forms.PictureBox pictureBox48;
-        private System.Windows.Forms.PictureBox pictureBox49;
-        private System.Windows.Forms.PictureBox pictureBox50;
-        private System.Windows.Forms.PictureBox pictureBox51;
-        private System.Windows.Forms.PictureBox pictureBox52;
-        private System.Windows.Forms.PictureBox pictureBox53;
-        private System.Windows.Forms.PictureBox pictureBox54;
-        private System.Windows.Forms.PictureBox pictureBox55;
-        private System.Windows.Forms.PictureBox pictureBox56;
-        private System.Windows.Forms.PictureBox pictureBox57;
-        private System.Windows.Forms.PictureBox pictureBox58;
-        private System.Windows.Forms.PictureBox pictureBox59;
-        private System.Windows.Forms.PictureBox pictureBox60;
-        private System.Windows.Forms.PictureBox pictureBox61;
-        private System.Windows.Forms.PictureBox pictureBox62;
-        private System.Windows.Forms.PictureBox pictureBox63;
-        private System.Windows.Forms.PictureBox pictureBox64;
-        private System.Windows.Forms.PictureBox pictureBox65;
-        private System.Windows.Forms.PictureBox pictureBox66;
-        private System.Windows.Forms.PictureBox pictureBox67;
-        private System.Windows.Forms.PictureBox pictureBox68;
-        private System.Windows.Forms.PictureBox pictureBox69;
+        private System.Windows.Forms.PictureBox imgitem2B5;
+        private System.Windows.Forms.PictureBox imgitem4B5;
+        private System.Windows.Forms.PictureBox imgitem5B5;
+        private System.Windows.Forms.PictureBox imgitem6B5;
+        private System.Windows.Forms.PictureBox imgitem6B4;
+        private System.Windows.Forms.PictureBox imgitem5B4;
+        private System.Windows.Forms.PictureBox imgitem4B4;
+        private System.Windows.Forms.PictureBox imgitem2B4;
+        private System.Windows.Forms.PictureBox imgitem3B4;
+        private System.Windows.Forms.PictureBox imgitem1B4;
+        private System.Windows.Forms.PictureBox imgitem6B3;
+        private System.Windows.Forms.PictureBox imgitem5B3;
+        private System.Windows.Forms.PictureBox imgitem4B3;
+        private System.Windows.Forms.PictureBox imgitem2B3;
+        private System.Windows.Forms.PictureBox imgitem3B3;
+        private System.Windows.Forms.PictureBox imgitem1B3;
+        private System.Windows.Forms.PictureBox imgitem6B2;
+        private System.Windows.Forms.PictureBox imgitem5B2;
+        private System.Windows.Forms.PictureBox imgitem4B2;
+        private System.Windows.Forms.PictureBox imgitem2B2;
+        private System.Windows.Forms.PictureBox imgitem3B2;
+        private System.Windows.Forms.PictureBox imgitem1B2;
+        private System.Windows.Forms.PictureBox imgitem6B1;
+        private System.Windows.Forms.PictureBox imgitem5B1;
+        private System.Windows.Forms.PictureBox imgitem4B1;
+        private System.Windows.Forms.PictureBox imgitem2B1;
+        private System.Windows.Forms.PictureBox imgitem3B1;
+        private System.Windows.Forms.PictureBox imgitem1B1;
+        private System.Windows.Forms.PictureBox imgitem1R1;
+        private System.Windows.Forms.PictureBox imgitem2R1;
+        private System.Windows.Forms.PictureBox imgitem3R1;
+        private System.Windows.Forms.PictureBox imgitem5R1;
+        private System.Windows.Forms.PictureBox imgitem4R1;
+        private System.Windows.Forms.PictureBox imgitem6R1;
+        private System.Windows.Forms.PictureBox imgitem1R3;
+        private System.Windows.Forms.PictureBox imgitem2R3;
+        private System.Windows.Forms.PictureBox imgitem3R3;
+        private System.Windows.Forms.PictureBox imgitem5R3;
+        private System.Windows.Forms.PictureBox imgitem4R3;
+        private System.Windows.Forms.PictureBox imgitem6R3;
+        private System.Windows.Forms.PictureBox imgitem1R4;
+        private System.Windows.Forms.PictureBox imgitem2R4;
+        private System.Windows.Forms.PictureBox imgitem3R4;
+        private System.Windows.Forms.PictureBox imgitem5R4;
+        private System.Windows.Forms.PictureBox imgitem4R4;
+        private System.Windows.Forms.PictureBox imgitem6R4;
+        private System.Windows.Forms.PictureBox imgitem1R5;
+        private System.Windows.Forms.PictureBox imgitem2R5;
+        private System.Windows.Forms.PictureBox imgitem3R5;
+        private System.Windows.Forms.PictureBox imgitem5R5;
+        private System.Windows.Forms.PictureBox imgitem4R5;
+        private System.Windows.Forms.PictureBox imgitem6R5;
+        private System.Windows.Forms.PictureBox imgitem1R2;
+        private System.Windows.Forms.PictureBox imgitem2R2;
+        private System.Windows.Forms.PictureBox imgitem3R2;
+        private System.Windows.Forms.PictureBox imgitem5R2;
+        private System.Windows.Forms.PictureBox imgitem4R2;
+        private System.Windows.Forms.PictureBox imgitem6R2;
     }
 }

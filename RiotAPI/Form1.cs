@@ -25,7 +25,7 @@ namespace RiotAPI
         }
 
         //Connection to Riot Services
-        RiotGamesApi riotApi = RiotGamesApi.NewInstance("RGAPI-29fdc982-a4a5-45d2-ac7a-cdca62cd04aa");
+        RiotGamesApi riotApi = RiotGamesApi.NewInstance("RGAPI-ea335895-799a-4f88-ae97-9d37bd0ae25f");
         public async void btnSearch_Click(object sender, EventArgs e)
         {
             //clear Form
