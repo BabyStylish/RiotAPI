@@ -22,11 +22,10 @@ namespace RiotAPI
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         //Connection to Riot Services
-        RiotGamesApi riotApi = RiotGamesApi.NewInstance("RGAPI-7aee64c2-2586-40dd-a5fc-77ac42697424");
+        RiotGamesApi riotApi = RiotGamesApi.NewInstance("RGAPI-29fdc982-a4a5-45d2-ac7a-cdca62cd04aa");
         public async void btnSearch_Click(object sender, EventArgs e)
         {
             //clear Form
@@ -279,7 +278,7 @@ namespace RiotAPI
 
         private void btnMoreStat_Click(object sender, EventArgs e)
         {
-            MoreStats ms = new MoreStats();
+            MoreStats ms = new MoreStats(match);
             ms.Show();
         }
 
@@ -291,10 +290,12 @@ namespace RiotAPI
             }
         }
 
+        Camille.RiotGames.MatchV5.Match match;
         private async void dropdownGame_SelectedIndexChanged(object sender, EventArgs e)
         {
             var summoner = riotApi.SummonerV4().GetBySummonerName(Camille.Enums.PlatformRoute.EUW1, txtSearch.Text);
             var match = riotApi.MatchV5().GetMatch(Camille.Enums.RegionalRoute.EUROPE, dropdownGame.SelectedItem.ToString());
+            this.match = match;
             //Game Duration
             var gameDuration = match.Info.GameDuration;
             TimeSpan t = TimeSpan.FromSeconds(gameDuration);
@@ -337,7 +338,7 @@ namespace RiotAPI
             {
                 MessageBox.Show(ex.Message);
                 //continue;
-            }            
+            }
 
             //KDA
             var kills = participant.Kills;
@@ -347,11 +348,48 @@ namespace RiotAPI
 
             //Minion Kills
             var CS = participant.TotalMinionsKilled.ToString();
-            lblCS.Text = CS; 
+            lblCS.Text = CS;
 
             //Gold Earned
             var goldEarned = participant.GoldEarned;
             lblGold.Text = goldEarned.ToString();
+
+            //Bans
+            var teamBan = match.Info.Teams;
+            List<int> bans = new List<int>();
+            foreach (var team in teamBan)
+            {
+                foreach (var ban in team.Bans)
+                {
+                    bans.Add((int)ban.ChampionId);
+                }
+            }
+
+            if (bans.Count != 0)
+            {
+                try
+                {
+                    imgBan1.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[0].ToString()].Id + ".png");
+                    imgBan2.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[1].ToString()].Id + ".png");
+                    imgBan3.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[2].ToString()].Id + ".png");
+                    imgBan4.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[3].ToString()].Id + ".png");
+                    imgBan5.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[4].ToString()].Id + ".png");
+                    imgBan6.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[5].ToString()].Id + ".png");
+                    imgBan7.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[6].ToString()].Id + ".png");
+                    imgBan8.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[7].ToString()].Id + ".png");
+                    imgBan9.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[8].ToString()].Id + ".png");
+                    imgBan10.LoadAsync("http://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/" + champions[bans[9].ToString()].Id + ".png");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("There were no bans!");
+            }
 
             //Summoner Spells
             //Using Methods SummonerSpellDLoad and SummonerSpellFLoad

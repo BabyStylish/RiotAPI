@@ -47,6 +47,12 @@
             this.lblLevel = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.imgBan10 = new System.Windows.Forms.PictureBox();
+            this.imgBan9 = new System.Windows.Forms.PictureBox();
+            this.imgBan8 = new System.Windows.Forms.PictureBox();
+            this.imgBan7 = new System.Windows.Forms.PictureBox();
+            this.imgBan6 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dropdownGame = new System.Windows.Forms.ComboBox();
             this.btnPrevious = new System.Windows.Forms.Button();
@@ -87,6 +93,7 @@
             this.champImage = new System.Windows.Forms.PictureBox();
             this.lblSummonerName = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgSummonerIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgRank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgTopChamp1)).BeginInit();
@@ -95,6 +102,11 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgWinDefeat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBan5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBan4)).BeginInit();
@@ -297,6 +309,13 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.imgBan10);
+            this.tabPage2.Controls.Add(this.imgBan9);
+            this.tabPage2.Controls.Add(this.imgBan8);
+            this.tabPage2.Controls.Add(this.imgBan7);
+            this.tabPage2.Controls.Add(this.imgBan6);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.dropdownGame);
             this.tabPage2.Controls.Add(this.btnPrevious);
@@ -344,6 +363,61 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Match History";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(68, 488);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 25);
+            this.label7.TabIndex = 45;
+            this.label7.Text = "Bans";
+            // 
+            // imgBan10
+            // 
+            this.imgBan10.Location = new System.Drawing.Point(745, 541);
+            this.imgBan10.Name = "imgBan10";
+            this.imgBan10.Size = new System.Drawing.Size(70, 67);
+            this.imgBan10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgBan10.TabIndex = 44;
+            this.imgBan10.TabStop = false;
+            // 
+            // imgBan9
+            // 
+            this.imgBan9.Location = new System.Drawing.Point(669, 541);
+            this.imgBan9.Name = "imgBan9";
+            this.imgBan9.Size = new System.Drawing.Size(70, 67);
+            this.imgBan9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgBan9.TabIndex = 43;
+            this.imgBan9.TabStop = false;
+            // 
+            // imgBan8
+            // 
+            this.imgBan8.Location = new System.Drawing.Point(593, 541);
+            this.imgBan8.Name = "imgBan8";
+            this.imgBan8.Size = new System.Drawing.Size(70, 67);
+            this.imgBan8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgBan8.TabIndex = 42;
+            this.imgBan8.TabStop = false;
+            // 
+            // imgBan7
+            // 
+            this.imgBan7.Location = new System.Drawing.Point(518, 541);
+            this.imgBan7.Name = "imgBan7";
+            this.imgBan7.Size = new System.Drawing.Size(70, 67);
+            this.imgBan7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgBan7.TabIndex = 41;
+            this.imgBan7.TabStop = false;
+            // 
+            // imgBan6
+            // 
+            this.imgBan6.Location = new System.Drawing.Point(442, 541);
+            this.imgBan6.Name = "imgBan6";
+            this.imgBan6.Size = new System.Drawing.Size(70, 67);
+            this.imgBan6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgBan6.TabIndex = 40;
+            this.imgBan6.TabStop = false;
             // 
             // label1
             // 
@@ -728,6 +802,15 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(353, 130);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 46;
+            this.label8.Text = "label8";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -750,6 +833,11 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBan6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgWinDefeat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBan5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBan4)).EndInit();
@@ -831,6 +919,13 @@
         private System.Windows.Forms.ComboBox dropdownGame;
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnNextGame;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox imgBan10;
+        private System.Windows.Forms.PictureBox imgBan9;
+        private System.Windows.Forms.PictureBox imgBan8;
+        private System.Windows.Forms.PictureBox imgBan7;
+        private System.Windows.Forms.PictureBox imgBan6;
+        private System.Windows.Forms.Label label8;
     }
 }
 
